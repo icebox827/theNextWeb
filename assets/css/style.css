@@ -9,3 +9,36 @@
  font-size: 1rem;
  padding: 0 0.5rem;
 }
+
+.topbar {
+    position: fixed top; 
+    background-color: black;
+}
+
+.topbar a{
+    color: beige;
+    outline: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.nav1 {
+
+}
+
+.nav2 {
+  flex: 1;
+}
