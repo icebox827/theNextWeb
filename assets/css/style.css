@@ -47,14 +47,12 @@
     justify-content: space-between;
    }
    
-<<<<<<< HEAD
 .nav-heading .nav-heading-left a {
 text-decoration: none;
 color: gray;
 font-size: 1rem;
 padding: 0 0.5rem;
 }
-=======
    .nav-heading .nav-heading-left a {
     text-decoration: none;
     color: gray;
@@ -72,4 +70,3 @@ padding: 0 0.5rem;
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
    }
->>>>>>> e70a567227787ab3d9b7b5124b1b7934317b4ba7
