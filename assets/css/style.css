@@ -97,6 +97,17 @@ padding: 0 0.5rem;
        color: #333;
        font-size: 1.25rem ;
    }
-   
 
+               /* section-latest-news */
+    .section-latest-news .image-links {
+        display: grid;
+        grid-template-columns: 5px 5px 5px 5px;
+        grid-template-rows: 5px 5px;
+        grid-gap: 25rem;
+        justify-content: center;
+    }
+
+    .section-latest-news .image-links img {
+        max-width: 25rem;       
+    }
    
