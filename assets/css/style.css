@@ -1,33 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* fixed topbar */
 .flex-nav {
     position: fixed top; 
     background-color: black;
-   
+    height: 2rem;
 }
 .flex-nav ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
 .flex-nav li{
-    flex: 2;
-}
-
-.flex-nav .nav-right {
+    width: 100%;
+    position: relative;
     flex: 1;
 }
 
 .flex-nav a{
     color: beige;
     outline: none;
+    text-decoration: none;
+}
+
+.flex-nav li .nav-right {
+    order: 1;
 }
 
 .flex-nav ul li .dropdown {
     display: block;
 }
 .flex-nav ul li .dropdown-content{
+    display: none;
     flex-direction: column;
 }
 
@@ -40,6 +50,7 @@
     display: none;
     position: absolute;
     background-color: black;
+    top: 0;
     margin: 0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -52,7 +63,7 @@
 }
 
 /* Media Queries */
-@media all (min-width:768px) {
+@media all and (min-width:768px) {
     .flex-nav ul{
         flex-wrap: wrap;
     }
@@ -87,4 +98,13 @@ padding: 0 0.5rem;
 display: grid;
 grid-template-columns: repeat(4 20px)
 grid-gap 20px;
+}
+
+/* Jumbo cover articles */
+.jumbo {
+    padding: 4px;
+}
+
+.jumbo-grid {
+
 }
