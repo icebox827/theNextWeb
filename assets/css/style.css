@@ -37,8 +37,10 @@
 }
 
 /* Media Queries */
-@media all {
-
+@media all and (max-width:1000px) {
+    .flex-nav ul{
+        flex-wrap: wrap;
+    }
 }
 
 /* navigation bar */
