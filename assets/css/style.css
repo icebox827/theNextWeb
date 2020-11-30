@@ -36,6 +36,10 @@
     background-color: inherit;
 }
 
+/* Media Queries */
+@media all {
+
+}
 
 /* navigation bar */
 .nav-heading {
@@ -43,9 +47,9 @@
     justify-content: space-between;
    }
    
-   .nav-heading .nav-heading-left a {
-    text-decoration: none;
-    color: gray;
-    font-size: 1rem;
-    padding: 0 0.5rem;
-   }
+.nav-heading .nav-heading-left a {
+text-decoration: none;
+color: gray;
+font-size: 1rem;
+padding: 0 0.5rem;
+}
