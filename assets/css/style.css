@@ -5,11 +5,10 @@
    
 }
 .flex-nav ul {
-    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: space-between;
+    
 }
 
 .flex-nav li{
@@ -25,6 +24,9 @@
     outline: none;
 }
 
+.flex-nav ul li .dropdown {
+    display: block;
+}
 .flex-nav ul li .dropdown-content{
     flex-direction: column;
 }
@@ -38,6 +40,7 @@
     display: none;
     position: absolute;
     background-color: black;
+    margin: 0;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -48,9 +51,6 @@
     display: block;
 }
 
-.nav-right {
-    float: right;
-}
 /* Media Queries */
 @media all (min-width:768px) {
     .flex-nav ul{
