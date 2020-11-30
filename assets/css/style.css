@@ -1,15 +1,4 @@
-.nav-heading {
- display: flex;
- justify-content: space-between;
-}
-
-.nav-heading .nav-heading-left a {
- text-decoration: none;
- color: gray;
- font-size: 1rem;
- padding: 0 0.5rem;
-}
-
+/* fixed topbar */
 .topbar {
     position: fixed top; 
     background-color: black;
@@ -42,3 +31,17 @@
 .nav2 {
   flex: 1;
 }
+
+/* navigation bar */
+
+.nav-heading {
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .nav-heading .nav-heading-left a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+   }
