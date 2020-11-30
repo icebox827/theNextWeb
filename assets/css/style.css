@@ -1,27 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* fixed topbar */
 .flex-nav {
     position: fixed top; 
     background-color: black;
+    height: 2rem;
 }
 .flex-nav ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
     list-style: none;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
 .flex-nav li{
-    flex: 2;
-}
-
-.flex-nav .nav-right {
+    width: 100%;
+    position: relative;
     flex: 1;
 }
 
 .flex-nav a{
     color: beige;
     outline: none;
+    text-decoration: none;
+}
+
+.flex-nav li .nav-right {
+    order: 1;
+}
+
+.flex-nav ul li .dropdown {
+    display: block;
+}
+.flex-nav ul li .dropdown-content{
+    display: none;
+    flex-direction: column;
 }
 
 .dropdown {
@@ -29,15 +46,24 @@
     display: inline-block;
 }
 
-.dropdown .dropbtn {
-    color: beige;
-    border: none;
-    outline: none;
-    background-color: inherit;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Media Queries */
-@media all and (max-width:1000px) {
+@media all and (min-width:768px) {
     .flex-nav ul{
         flex-wrap: wrap;
     }
@@ -69,14 +95,18 @@ padding: 0 0.5rem;
        justify-content: space-between;
        margin: 1rem 0;
    }
+.nav-heading .nav-heading-left a {
+text-decoration: none;
+color: gray;
+font-size: 1rem;
+padding: 0 0.5rem;
+}
 
-   .section-header .section-header-left a {
-       text-decoration: none;
-       font-size: 1rem;
-       padding: 0 1rem;
-       color: gray;
-   }
+/* section-latest news */
 
+.section-latest-news {
+
+<<<<<<< HEAD
    .section-header .section-header-left a:hover {
        color: #333;
        font-size: 1.05rem;
@@ -111,3 +141,43 @@ padding: 0 0.5rem;
         max-width: 25rem;       
     }
    
+=======
+}
+
+.section-latest-news .section-img-links {
+display: grid;
+grid-template-columns: repeat(4 20px)
+grid-gap 20px;
+}
+
+/* Jumbo cover articles */
+.jumbo-grid img {
+    width: 796px;
+    height: 448px;
+}
+.jumbo-grid {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "1 2"
+        "1 3"; 
+    padding: 4px;
+    margin: 1rem, 0;
+    grid-gap: 10px;
+}
+
+.item1 {
+    grid-area: 1 span;
+}
+
+.item2 {
+    grid-area: 2 / col2-start;
+}
+
+.item3 {
+    grid-area: 3 / col2-start;
+}
+>>>>>>> 10d039b1cc81ba283b751df754aa06cb885be1e6
