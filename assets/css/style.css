@@ -53,6 +53,10 @@
    /* section-latest news */
 
    .section-latest-news {
+    
+   }
+
+   .section-latest-news .section-img-links {
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
    }
