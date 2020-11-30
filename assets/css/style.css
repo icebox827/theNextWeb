@@ -70,28 +70,6 @@
 
 }
 
-        /* section-latest-news */
-.section-latest-news .image-links {
-    display: grid;
-    grid-template-columns: 5px 5px 5px 5px;
-    grid-template-rows: 5px 5px;
-    grid-gap: 25rem;
-    justify-content: center;
-}
-
-.section-latest-news .image-links img {
-    max-width: 25rem;       
-}
-
-
-.nav-heading .nav-heading-left a {
-text-decoration: none;
-color: gray;
-font-size: 1rem;
-padding: 0 0.5rem;
-}
-
-
 /* Jumbo cover articles */
 .jumbo-grid img {
     width: 796px;
