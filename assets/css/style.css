@@ -1,36 +1,41 @@
 /* fixed topbar */
-.topbar {
+.flex-nav {
     position: fixed top; 
     background-color: black;
 }
+.flex-nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+}
 
-.topbar a{
+.flex-nav li{
+    flex: 2;
+}
+
+.flex-nav .nav-right {
+    flex: 1;
+}
+
+.flex-nav a{
     color: beige;
     outline: none;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 .dropdown {
-
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown .dropbtn {
+    color: beige;
     border: none;
     outline: none;
-    background-color: none;
+    background-color: inherit;
 }
 
-.nav1 {
-
-}
-
-.nav2 {
-  flex: 1;
-}
 
 /* navigation bar */
 .nav-heading {
