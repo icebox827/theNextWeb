@@ -62,6 +62,23 @@ padding: 0 0.5rem;
     padding: 0 0.5rem;
    }
 
+   /* section-header */
+
+   .section-header {
+       display: flex;
+       justify-content: space-between;
+   }
+
+   .section-header .section-header-left a {
+       text-decoration: none;
+       font-size: 1rem;
+       padding: 0 1rem;
+       color: gray;
+   }
+
+   .section-header .section-header-right {
+       
+   }
    /* section-latest news */
 
    .section-latest-news {
