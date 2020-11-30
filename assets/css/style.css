@@ -102,9 +102,25 @@ grid-gap 20px;
 
 /* Jumbo cover articles */
 .jumbo {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100% 50%;
+    grid-gap: 0.5rem;
     padding: 4px;
 }
 
 .jumbo-grid {
+    
+}
 
+.item1 {
+
+}
+
+.item2 {
+
+}
+
+.item3 {
+    
 }
