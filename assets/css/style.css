@@ -104,8 +104,6 @@ padding: 0 0.5rem;
 
 /* section-latest news */
 
-.section-latest-news {
-
    .section-header .section-header-left a:hover {
        color: #333;
        font-size: 1.05rem;
@@ -140,7 +138,6 @@ padding: 0 0.5rem;
         max-width: 25rem;       
     }
    
-}
 
 .section-latest-news .section-img-links {
 display: grid;
