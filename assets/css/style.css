@@ -29,12 +29,6 @@
     display: inline-block;
 }
 
-.dropdown .dropbtn {
-    color: beige;
-    border: none;
-    outline: none;
-    background-color: inherit;
-}
 
 /* Media Queries */
 @media all and (max-width:1000px) {
