@@ -106,7 +106,6 @@ padding: 0 0.5rem;
 
 .section-latest-news {
 
-<<<<<<< HEAD
    .section-header .section-header-left a:hover {
        color: #333;
        font-size: 1.05rem;
@@ -141,7 +140,6 @@ padding: 0 0.5rem;
         max-width: 25rem;       
     }
    
-=======
 }
 
 .section-latest-news .section-img-links {
@@ -180,4 +178,3 @@ grid-gap 20px;
 .item3 {
     grid-area: 3 / col2-start;
 }
->>>>>>> 10d039b1cc81ba283b751df754aa06cb885be1e6
