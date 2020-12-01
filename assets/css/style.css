@@ -3,9 +3,19 @@
     padding: 0;
 }
 
-/* fixed topbar */
+/* Media Queries */
+@media all and (min-width:768px) {
+    .flex-nav ul{
+        flex-wrap: wrap;
+    }
+
+}
+
+/* topbar */
 .flex-nav {
-    position: fixed top; 
+    position: absolute; 
+    top: 0;
+    width: 100%;
     background-color: black;
     height: 2rem;
 }
@@ -18,19 +28,19 @@
 }
 
 .flex-nav li{
-    width: 100%;
-    position: relative;
+   flex: 3;
+   margin: 0.70rem;
+}
+
+.flex-nav .nav-right {
     flex: 1;
+    order: 1;
 }
 
 .flex-nav a{
     color: beige;
     outline: none;
     text-decoration: none;
-}
-
-.flex-nav li .nav-right {
-    order: 1;
 }
 
 .flex-nav ul li .dropdown {
@@ -62,61 +72,18 @@
     display: block;
 }
 
-/* Media Queries */
-@media all and (min-width:768px) {
-    .flex-nav ul{
-        flex-wrap: wrap;
-    }
+/* Fixed main navbar */
+.nav-header {
+   display: inline;
+   position: relative;
+   left: 10;
+   bottom: 50;
+   float: left;
+   
 
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 66030d2c828113d9a7b0168b7ff47666f85130d2
+
+
 /* Jumbo cover articles */
-.jumbo-grid img {
-    width: 796px;
-    height: 448px;
-}
-
-.jumbo-grid {
-    display: grid;
-    position: relative;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-        "1 1 2"
-        "1 1 3"; 
-    padding: 4px;
-    margin: 1rem, 0;
-    grid-gap: 10px;
-}
-
-.item1 {
-    grid-area: 1;
-}
-
-.item2 {
-    grid-area: 2 / col2-start;
-}
-
-.item3 {
-    grid-area: 3 / col2-start;
-}
-
-.flex-card-menu a {
-    font-size: x-large;
-    color: orangered;
-    padding-top: 2rem;
-    margin: 2rem;
-}
-
-.grid-card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    padding: 0.5rem;
-    width: 100%;
-}
