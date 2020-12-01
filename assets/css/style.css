@@ -159,7 +159,12 @@
 }
 
 /* latest-funding */
-.latest-funding .latest-funding-header {
+.latest-funding {
+   position: relative;
+   margin-top: 30rem;
+}
+
+.latest-funding-header {
     display: flex;
     justify-content: center;
 }
