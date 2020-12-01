@@ -158,6 +158,62 @@
     z-index: -1;
 }
 
+/* latest-funding */
+.latest-funding {
+   position: relative;
+   margin-top: 30rem;
+}
+
+.latest-funding-header {
+    display: flex;
+    justify-content: center;
+}
+
+.latest-funding .latest-funding-header .latest-funding-head {
+    padding: 1rem 8rem;
+}
+
+.latest-funding .latest-funding-header h2 {
+    color: #ff0000;
+    font-size: 2.5rem;
+}
+
+.latest-funding .latest-funding-header h2:hover {
+    color: #333;
+}
+
+.latest-funding .latest-funding-header ul {
+    text-decoration: none;
+    color: red;
+    display: flex;
+    list-style: none;
+}
+
+.latest-funding .latest-funding-header .add-info:hover {
+    color: #333;
+}
+.latest-funding .latest-funding-header .get-update:hover {
+    color: #333;
+}
+.latest-funding .latest-funding-header .see-more:hover {
+    color: #333;
+}
+
+.vertical-line {
+    color: red;
+    height: 1rem;
+    margin: 0 0.5rem;
+}
+
+.latest-funding-image {
+    display: flex;
+    justify-content: center;
+    /* padding: 1rem 5rem; */
+}
+
+.latest-funding-image .img-links {
+    padding: 1rem 1rem;
+}
 /* Latest news  */
 .latest-news{
     position: relative;
@@ -188,18 +244,79 @@
     margin-bottom: 5px;
 }
 
-/*  Feature Grid*/
-.features-grid {
+/*  Feature Flex*/
+.features-flex {
     position: relative;
     display: block;
+    top: 30px;
     margin: auto;
-    top: 650px;
     max-width: 1000px;
 }
 
-.flex-section{
+.flex-anchor {
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
 }
+
+.card {
+    flex: 1;
+    margin: 20px;
+}
+
+.flex-anchor a {
+    color: orangered;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.flex-anchor ul {
+    list-style: disc;
+    
+}
+
+.flex-anchor .card li a {
+    color: black;
+}
+
+.flex-anchor .card img {
+    width: 100%;
+}
+
+.flex-anchor .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 33.33%;
+    text-align: left;
+}
+
+.flex-anchor .card-header {
+    margin-bottom: 10px;
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-panel {
+    flex: 1;
+}
+.flex-anchor .card-panel {
+    background-color: rgb(240, 176, 152);
+    height: auto;
+}
+
+.flex-anchor .card-panel a {
+    color:#ff4422;
+    font-size: medium;
+}
+
+.flex-anchor .card-panel img {
+    width: 35%;
+}
+
