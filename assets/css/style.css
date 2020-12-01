@@ -277,3 +277,60 @@
     grid-template-rows: repeat(2, 0.5fr);
 }
 
+/* first footer */
+
+.first-footer {
+    background-color: #333;
+}
+
+.first-footer .first-footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.first-footer .first-footer-links a {
+    color: white;
+    padding: 1rem 1.1rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    background-color: rgba(153, 153, 153,0.2);
+    border-radius: 50%;
+}
+
+.first-footer .first-footer-links a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+    
+.first-footer .first-footer-page {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.first-footer .first-footer-page li {
+    margin: 1rem 1rem;
+    padding: 1rem 0.5rem;
+    color: rgba(153, 153, 153,0.7);
+}
+
+.first-footer .first-footer-page li:hover {
+    color: white;
+}
+
+.second-footer {
+    background-color: black;
+}
+
+.second-footer .second-footer-links {
+    display: flex;
+    list-style: none;
+    color: gray;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 2rem 1rem;
+}
+
+.second-footer .second-footer-links a {
+    text-decoration: none;
+    color: white;
+}
