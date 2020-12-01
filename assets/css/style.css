@@ -28,19 +28,19 @@
 
 .first-nav ul {
     list-style: none;
-    
 }
 
 .first-nav li{
-  
-   margin: 0.70rem;
+    display: inline-block;
+    margin: 0.70rem;
+    padding-top: 1px;
 }
 
 .first-nav .nav-right {
     float: right;
 }
 
-.first-nav a{
+.first-nav a {
     color: beige;
     display: inline;
     outline: none;
@@ -80,7 +80,7 @@
 /* Fixed main navbar */
 .warpper1 {
     position: relative;
-    top: 13rem;
+    top: 2rem;
     height:  2rem;
     background-color: rgb(250, 239, 239);
 }
@@ -88,7 +88,6 @@
 .second-nav {
    display: block;
    float: left;
-   display: block;
    width: 100%;
    background-color: inherit;
 }
@@ -97,7 +96,22 @@
     float: right;
 }
 
+.second-nav ul {
+    list-style: none;
+}
 
+.second-nav li {
+    display: inline-block;
+    margin: 1rem;
+}
 
+.second-nav a {
+    color: rgb(153, 153, 153);
+    display: inline;
+    outline: none;
+    padding: 2px 4px;
+    text-decoration: none;
+    font-size: large;
+}
 
 /* Jumbo cover articles */
