@@ -173,7 +173,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    grid-gap: 0.3em;
+    grid-gap: 1em;
 }
 
 .latest-news img {
@@ -184,4 +184,22 @@
     color: grey;
 }
 
+.latest-news h2 {
+    margin-bottom: 5px;
+}
 
+/*  Feature Grid*/
+.features-grid {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 650px;
+    max-width: 1000px;
+}
+
+.flex-section{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
