@@ -8,38 +8,43 @@
     .flex-nav ul{
         flex-wrap: wrap;
     }
-
 }
 
 /* topbar */
-.first-nav {
-    position: absolute; 
-    top: 0;
+.warpper {
+    position: absolute;
     width: 100%;
     background-color: black;
-    height: 2rem;
 }
+
+.first-nav {
+    position: absolute; 
+    float: left;
+    display: block;
+    top: 0;
+    width: 100%;   
+    background-color: inherit;
+}
+
 .first-nav ul {
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    
 }
 
 .first-nav li{
-   flex: 3;
+  
    margin: 0.70rem;
 }
 
 .first-nav .nav-right {
-    flex: 1;
-    order: 1;
+    float: right;
 }
 
-.flex-nav a{
+.first-nav a{
     color: beige;
+    display: inline;
     outline: none;
+    padding: 8px 12px;
     text-decoration: none;
 }
 
@@ -73,14 +78,23 @@
 }
 
 /* Fixed main navbar */
-.nav-header {
-   display: inline;
-   position: relative;
-   left: 10;
-   bottom: 50;
-   float: left;
-   
+.warpper1 {
+    position: relative;
+    top: 13rem;
+    height:  2rem;
+    background-color: rgb(250, 239, 239);
+}
 
+.second-nav {
+   display: block;
+   float: left;
+   display: block;
+   width: 100%;
+   background-color: inherit;
+}
+
+.second-nav .search {
+    float: right;
 }
 
 
