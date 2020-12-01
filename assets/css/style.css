@@ -12,14 +12,14 @@
 }
 
 /* topbar */
-.flex-nav {
+.first-nav {
     position: absolute; 
     top: 0;
     width: 100%;
     background-color: black;
     height: 2rem;
 }
-.flex-nav ul {
+.first-nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -27,12 +27,12 @@
     align-content: center;
 }
 
-.flex-nav li{
+.first-nav li{
    flex: 3;
    margin: 0.70rem;
 }
 
-.flex-nav .nav-right {
+.first-nav .nav-right {
     flex: 1;
     order: 1;
 }
@@ -43,10 +43,10 @@
     text-decoration: none;
 }
 
-.flex-nav ul li .dropdown {
+.first-nav ul li .dropdown {
     display: block;
 }
-.flex-nav ul li .dropdown-content{
+.first-nav ul li .dropdown-content{
     display: none;
     flex-direction: column;
 }
