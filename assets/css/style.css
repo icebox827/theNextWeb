@@ -184,12 +184,33 @@
     display: inline-block;
     list-style: none;
 }
-
 .latest-fundings .left-header li {
     display: inline-block;
     padding: 5px;
 }
-
+.latest-content {
+    position: relative;
+    width: 100%;;
+}
+.card-flex {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.card-1 {
+    flex: 1;
+    margin: 20px;
+}
+.card-title {
+    width: 100%;
+}
+.card-logo img {
+    width: 100px;
+    height: 100px;
+}
 /* Latest news  */
 .latest-news{
     position: relative;
@@ -279,7 +300,7 @@
 }
 
 .card-content {
-    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fslackstock.jpg&signature=563912982746faa3ac299cf1576a3aa3");
+    
 }
 
 .card-panel {
