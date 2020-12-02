@@ -229,7 +229,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     width: 100%;
-    grid-gap: 0.3em;
+    grid-gap: 1em;
 }
 
 .latest-news img {
@@ -240,7 +240,88 @@
     color: grey;
 }
 
-/* latest deals */
+.latest-news h2 {
+    margin-bottom: 5px;
+}
+
+/*  Feature Flex*/
+.features-flex {
+    position: relative;
+    display: block;
+    top: 30px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.flex-anchor {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card {
+    flex: 1;
+    margin: 20px;
+}
+
+.flex-anchor a {
+    color: orangered;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.flex-anchor ul {
+    list-style: disc;
+    
+}
+
+.flex-anchor .card li a {
+    color: black;
+}
+
+.flex-anchor .card img {
+    width: 100%;
+}
+
+.flex-anchor .card {
+    max-width: 33.33%;
+    text-align: left;
+}
+
+.flex-anchor .card-header {
+    margin-bottom: 10px;
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-content {
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F12%2Fslackstock.jpg&signature=563912982746faa3ac299cf1576a3aa3");
+}
+
+.card-panel {
+    flex: 1;
+}
+.flex-anchor .card-panel {
+    background-color: rgb(245, 215, 205);
+    height: auto;
+}
+
+.flex-anchor .card-panel a {
+    color:#ff4422;
+    font-size: medium;
+}
+
+.flex-anchor .card-panel img {
+    width: 35%;
+}
 
 .latest-deals {
     position: relative;
