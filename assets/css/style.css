@@ -157,7 +157,6 @@
     grid-area: 3 / 4 / 5 / 7;
     z-index: -1;
 }
-
 /* latest-funding */
 .latest-fundings {
     position: relative;
@@ -166,14 +165,30 @@
     margin: auto;
     display: block;
 }
-
-.latest-content {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+.right-header {
+    float: left;
+}
+.left-header{
+    float: right;
+}
+.latest-fundings .right-header h2 a {
+    color: #ff4422;
+    font-size: xx-large;
+}
+.latest-fundings .left-header a {
+    color: #ff4422;
+    text-decoration: none;
+    font-size: large;
+}
+.latest-fundings .left-header ul {
+    display: inline-block;
+    list-style: none;
 }
 
-
+.latest-fundings .left-header li {
+    display: inline-block;
+    padding: 5px;
+}
 
 /* Latest news  */
 .latest-news{
