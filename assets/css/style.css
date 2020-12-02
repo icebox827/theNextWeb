@@ -223,15 +223,15 @@
     float: right;
 }
 
-.latest-fundings .right-header h2 a {
-    color: #ff4422;
-    font-size: xx-large;
-}
-
 .latest-fundings .left-header a {
     color: #ff4422;
     text-decoration: none;
     font-size: large;
+}
+
+.latest-fundings .right-header h2 a {
+    color: #ff4422;
+    font-size: xx-large;
 }
 
 .latest-fundings .left-header ul {
