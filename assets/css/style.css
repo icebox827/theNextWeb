@@ -159,6 +159,20 @@
 }
 
 /* latest-funding */
+.latest-fundings {
+    position: relative;
+    top: 540px;
+    max-width: 1000px;
+    margin: auto;
+    display: block;
+}
+
+.latest-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /* Latest news  */
@@ -195,7 +209,7 @@
 .features-flex {
     position: relative;
     display: block;
-    top: 30px;
+    top: 930px;
     margin: auto;
     max-width: 1000px;
 }
