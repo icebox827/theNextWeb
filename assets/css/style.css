@@ -4,9 +4,31 @@
 }
 
 /* Media Queries */
-@media all and (min-width:768px) {
+@media all and (max-width:768px) {
     .flex-nav ul{
         flex-wrap: wrap;
+    }
+    .first-nav {
+        display: none;
+    }
+    .warpper {
+        display: none;
+    }
+
+    .grid-display {
+        display: block;
+    }
+    
+}
+
+@media all and (max-width: 992px) {
+    .flex-nav ul{
+        flex-wrap: wrap;
+    }
+    .warpper1 {
+        position: fixed;
+        display: inline;
+        background-color: rgb(252, 250, 250);
     }
 }
 
