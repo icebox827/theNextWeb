@@ -6,7 +6,7 @@
 /* Media Queries */
 
 @media all and (max-width:768px) {
-    .flex-nav ul{
+    .flex-nav ul {
         flex-wrap: wrap;
     }
 
@@ -30,7 +30,7 @@
 }
 
 @media all and (max-width: 992px) {
-    .flex-nav ul{
+    .flex-nav ul {
         flex-wrap: wrap;
     }
 
@@ -71,7 +71,7 @@
     list-style: none;
 }
 
-.first-nav li{
+.first-nav li {
     display: inline-block;
     margin: 0.70rem;
     padding-top: 1px;
@@ -93,7 +93,7 @@
     display: block;
 }
 
-.first-nav ul li .dropdown-content{
+.first-nav ul li .dropdown-content {
     display: none;
     flex-direction: column;
 }
@@ -224,7 +224,7 @@
 }
 
 .latest-fundings .left-header a {
-    color: #ff4422;
+    color: #f42;
     text-decoration: none;
     font-size: large;
 }
@@ -244,8 +244,12 @@
 }
 
 .latest-fundings .right-header h2 a {
-    color: #ff4422;
+    color: #f42;
     font-size: xx-large;
+}
+
+.card-funding ul {
+    list-style: none;
 }
 
 .latest-fundings .left-header ul {
@@ -269,7 +273,7 @@
 .card-funding {
     flex: 1;
     margin: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-funding img {
@@ -286,20 +290,16 @@
 }
 
 .card-title{
-    background-color: #ff4422;
+    background-color: #f42;
 }
 
 .card-text {
     background-color: rgb(250, 215, 162);
 }
 
-.card-funding ul {
-    list-style: none;
-}
-
 /* Latest news  */
 
-.latest-news{
+.latest-news {
     position: relative;
     top: 50px;
     display: block;
@@ -327,7 +327,7 @@
 
 .latest-news h2 {
     margin-bottom: 5px;
-    color: #ff4422;
+    color: #f42;
     font-size: xx-large;
 }
 
@@ -360,7 +360,7 @@
 }
 
 .flex-anchor a {
-    color: #ff4422;
+    color: #f42;
     font-size: xx-large;
     font-weight: bolder;
     padding: 5px;
@@ -405,7 +405,7 @@
 }
 
 .flex-anchor .card-panel a {
-    color:#ff4422;
+    color:#f42;
     font-size: medium;
 }
 
@@ -439,7 +439,7 @@
 .latest-deals h2 {
     margin-bottom: 5px;
     padding-bottom: 2px;
-    color: #ff4422;
+    color: #f42;
     font-size: xx-large;
 }
 
