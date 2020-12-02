@@ -159,61 +159,8 @@
 }
 
 /* latest-funding */
-.latest-funding {
-   position: relative;
-   margin-top: 30rem;
-}
 
-.latest-funding-header {
-    display: flex;
-    justify-content: center;
-}
 
-.latest-funding .latest-funding-header .latest-funding-head {
-    padding: 1rem 8rem;
-}
-
-.latest-funding .latest-funding-header h2 {
-    color: #ff0000;
-    font-size: 2.5rem;
-}
-
-.latest-funding .latest-funding-header h2:hover {
-    color: #333;
-}
-
-.latest-funding .latest-funding-header ul {
-    text-decoration: none;
-    color: red;
-    display: flex;
-    list-style: none;
-}
-
-.latest-funding .latest-funding-header .add-info:hover {
-    color: #333;
-}
-.latest-funding .latest-funding-header .get-update:hover {
-    color: #333;
-}
-.latest-funding .latest-funding-header .see-more:hover {
-    color: #333;
-}
-
-.vertical-line {
-    color: red;
-    height: 1rem;
-    margin: 0 0.5rem;
-}
-
-.latest-funding-image {
-    display: flex;
-    justify-content: center;
-    /* padding: 1rem 5rem; */
-}
-
-.latest-funding-image .img-links {
-    padding: 1rem 1rem;
-}
 /* Latest news  */
 .latest-news{
     position: relative;
