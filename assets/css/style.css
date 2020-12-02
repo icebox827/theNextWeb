@@ -14,11 +14,15 @@
     .warpper {
         display: none;
     }
-
     .grid-display {
+        position: absolute;
         display: block;
     }
-    
+
+    .latest-news {
+        display: block;
+    }
+
 }
 
 @media all and (max-width: 992px) {
@@ -27,8 +31,17 @@
     }
     .warpper1 {
         position: fixed;
+        top: 0;
         display: inline;
         background-color: rgb(252, 250, 250);
+    }
+    .grid-display {
+        position: absolute;
+        display: block;
+    }
+
+    .latest-news {
+        display: block;
     }
 }
 
@@ -38,7 +51,6 @@
     width: 100%;
     background-color: black;
 }
-
 .first-nav {
     position: absolute; 
     float: left;
@@ -47,21 +59,17 @@
     width: 100%;   
     background-color: inherit;
 }
-
 .first-nav ul {
     list-style: none;
 }
-
 .first-nav li{
     display: inline-block;
     margin: 0.70rem;
     padding-top: 1px;
 }
-
 .first-nav .nav-right {
     float: right;
 }
-
 .first-nav a {
     color: beige;
     display: inline;
@@ -69,7 +77,6 @@
     padding: 8px 12px;
     text-decoration: none;
 }
-
 .first-nav ul li .dropdown {
     display: block;
 }
@@ -77,12 +84,10 @@
     display: none;
     flex-direction: column;
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -94,11 +99,9 @@
     padding: 12px 16px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 /* Fixed main navbar */
 .warpper1 {
     position: relative;
@@ -106,27 +109,22 @@
     height:  2rem;
     background-color: rgb(252, 250, 250);
 }
-
 .second-nav {
    display: block;
    float: left;
    width: 100%;
    background-color: inherit;
 }
-
 .second-nav .search {
     float: right;
 }
-
 .second-nav ul {
     list-style: none;
 }
-
 .second-nav li {
     display: inline-block;
     margin: 0.5rem;
 }
-
 .second-nav a {
     position: sticky;
     color: rgb(153, 153, 153);
@@ -137,52 +135,42 @@
     font-size: large;
     text-transform: uppercase;
 }
-
 /* Grid cover articles */
-
 .grid-display {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 10px;
     padding-top: 20px;
     margin-top: 3rem;
     width: 100%;
-    height: 400px;
+    height: 600px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: gray;
 }
-
 .grid-display section {
-    display: inline-block;
+    
 }
-
 .grid-display img {
     position: absolute;
-    z-index: 1;
     display: block;
-    height: auto;
-    width: 100%;
+    height: 417px;
+    width: 796px;
 }
-
 .grid-items1 {
     grid-column: span 4;
     grid-row: span 3;
-    z-index: -1;
 }
-
 .grid-items2 {
     grid-area: 1 / 4 / 3 / 7; 
-    z-index: -1;
 }
-
 .grid-items3 {
     grid-area: 3 / 4 / 5 / 7;
-    z-index: -1;
+    
 }
 /* latest-funding */
 .latest-fundings {
     position: relative;
-    top: 540px;
+    top: 100px;
     max-width: 1000px;
     margin: auto;
     display: block;
@@ -239,15 +227,13 @@
 .card-text {
     background-color: rgb(250, 215, 162);
 }
-
 .card-funding ul {
     list-style: none;
 }
-
 /* Latest news  */
 .latest-news{
     position: relative;
-    top: 470px;
+    top: 50px;
     display: block;
     margin: auto;
     max-width: 1000px;
@@ -276,16 +262,14 @@
     text-decoration: none;
     color: black;
 }
-
 /*  Feature Flex*/
 .features-flex {
     position: relative;
     display: block;
-    top: 580px;
+    top: 150px;
     margin: auto;
     max-width: 1000px;
 }
-
 .flex-anchor {
     position: relative;
     display: flex;
@@ -293,52 +277,42 @@
     justify-content: space-between;
     align-items: flex-start;
 }
-
 .card {
     flex: 1;
     margin: 20px;
 }
-
 .flex-anchor a {
     color: #ff4422;
     font-size: xx-large;
     font-weight: bolder;
     padding: 5px;
 }
-
 .flex-anchor ul {
     list-style: disc;
     
 }
-
 .flex-anchor .card li a {
     color: black;
 }
-
 .flex-anchor .card img {
     width: 100%;
 }
-
 .flex-anchor .card {
     max-width: 33.33%;
     text-align: left;
 }
-
 .flex-anchor .card-header {
     margin-bottom: 10px;
 }
-
 .card-header {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-
 .card-content {
     
 }
-
 .card-panel {
     flex: 1;
 }
@@ -346,25 +320,21 @@
     background-color: rgb(245, 215, 205);
     height: auto;
 }
-
 .flex-anchor .card-panel a {
     color:#ff4422;
     font-size: medium;
 }
-
 .flex-anchor .card-panel img {
     width: 35%;
 }
-
 /* Latest deals section*/
 .latest-deals {
     position: relative;
-    top: 620px;
+    top: 220px;
     display: block;
     margin: auto;
     max-width: 1000px;
 }
-
 .deals-warpper {
     position: relative;
     display: grid;
@@ -373,7 +343,6 @@
     width: 100%;
     grid-gap: 1em;
 }
-
 .latest-deals img {
     width: 100%;
 }
@@ -392,20 +361,16 @@
     color: grey;
     margin-top: 5px;
 }
-
 /* first footer */
-
 .first-footer {
     position: relative;
-    top: 650px;
+    top: 250px;
     background-color: #333;
 }
-
 .first-footer .first-footer-links {
     display: flex;
     justify-content: center;
 }
-
 .first-footer .first-footer-links a {
     color: white;
     padding: 1rem 1.1rem;
@@ -414,33 +379,27 @@
     background-color: rgba(153, 153, 153,0.2);
     border-radius: 50%;
 }
-
 .first-footer .first-footer-links a:hover{
     background-color: rgba(0,0,0,0.2);
-}
-    
+}  
 .first-footer .first-footer-page {
     display: flex;
     justify-content: center;
     list-style: none;
 }
-
 .first-footer .first-footer-page li {
     margin: 1rem 1rem;
     padding: 1rem 0.5rem;
     color: rgba(153, 153, 153,0.7);
 }
-
 .first-footer .first-footer-page li:hover {
     color: white;
 }
-
 .second-footer {
     position: relative;
-    top: 650px;
+    top: 250px;
     background-color: black;
 }
-
 .second-footer .second-footer-links {
     display: flex;
     list-style: none;
@@ -449,7 +408,6 @@
     margin: 0 1rem;
     padding: 2rem 1rem;
 }
-
 .second-footer .second-footer-links a {
     text-decoration: none;
     color: white;
