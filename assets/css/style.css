@@ -4,20 +4,23 @@
 }
 
 /* Media Queries */
+
 @media all and (max-width:768px) {
     .flex-nav ul{
         flex-wrap: wrap;
     }
+
     .first-nav {
         display: none;
     }
+
     .warpper {
         display: none;
     }
+
     .grid-display {
         position: absolute;
         display: grid;
-        
     }
 
     .latest-news {
@@ -30,12 +33,14 @@
     .flex-nav ul{
         flex-wrap: wrap;
     }
+
     .warpper1 {
         position: fixed;
         top: 0;
         display: inline;
         background-color: rgb(252, 250, 250);
     }
+
     .grid-display {
         position: absolute;
         display: block;
@@ -52,6 +57,7 @@
     width: 100%;
     background-color: black;
 }
+
 .first-nav {
     position: absolute; 
     float: left;
@@ -60,17 +66,21 @@
     width: 100%;   
     background-color: inherit;
 }
+
 .first-nav ul {
     list-style: none;
 }
+
 .first-nav li{
     display: inline-block;
     margin: 0.70rem;
     padding-top: 1px;
 }
+
 .first-nav .nav-right {
     float: right;
 }
+
 .first-nav a {
     color: beige;
     display: inline;
@@ -78,17 +88,21 @@
     padding: 8px 12px;
     text-decoration: none;
 }
+
 .first-nav ul li .dropdown {
     display: block;
 }
+
 .first-nav ul li .dropdown-content{
     display: none;
     flex-direction: column;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -100,32 +114,40 @@
     padding: 12px 16px;
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /* Fixed main navbar */
+
 .warpper1 {
     position: relative;
     top: 2rem;
     height:  2rem;
     background-color: rgb(252, 250, 250);
 }
+
 .second-nav {
    display: block;
    float: left;
    width: 100%;
    background-color: inherit;
 }
+
 .second-nav .search {
     float: right;
 }
+
 .second-nav ul {
     list-style: none;
 }
+
 .second-nav li {
     display: inline-block;
     margin: 0.5rem;
 }
+
 .second-nav a {
     position: sticky;
     color: rgb(153, 153, 153);
@@ -136,7 +158,9 @@
     font-size: large;
     text-transform: uppercase;
 }
+
 /* Grid cover articles */
+
 .grid-display {
     display: grid;
     grid-gap: 10px;
@@ -153,29 +177,35 @@
         "a a a a c c";
     background-color: gray;
 }
+
 .grid-display section {
     position: relative;
     display: block;
 }
+
 .grid-display img {
     position: absolute;
     display: block;
     height: 417px;
     width: 796px;
 }
+
 .grid-items1 {
     background-image: url("/assets/img/IFR_screen_GlidingAphrodite_20200910_945pm_CEST-796x448.jpeg");
     grid-area: a;  
 }
+
 .grid-items2 {
     background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Flucid-air-configurator-ray-tracing-car-future-ev-zerolight.jpg&signature=3a8658003cf3f92188923ab0528c18fb");
     grid-area: b; 
 }
+
 .grid-items3 {
     background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Fheader-image-AI-is-the-future-of-home-security-spotcam.png&signature=a404c06078f6967f593e460e65c60ac3");
     grid-area: c;
     
 }
+
 /* latest-funding */
 .latest-fundings {
     position: relative;
@@ -184,29 +214,36 @@
     margin: auto;
     display: block;
 }
+
 .right-header {
     float: left;
 }
+
 .left-header{
     float: right;
 }
+
 .latest-fundings .right-header h2 a {
     color: #ff4422;
     font-size: xx-large;
 }
+
 .latest-fundings .left-header a {
     color: #ff4422;
     text-decoration: none;
     font-size: large;
 }
+
 .latest-fundings .left-header ul {
     display: inline-block;
     list-style: none;
 }
+
 .latest-fundings .left-header li {
     display: inline-block;
     padding: 5px;
 }
+
 .latest-funding-content {
     position: relative;
     display: flex;
@@ -214,11 +251,13 @@
     align-content: flex-start;
     width: 100%;
 }
+
 .card-funding {
     flex: 1;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 .card-funding img {
     width: 40px;
     height: 40px;
@@ -227,19 +266,25 @@
     margin-right: 4px;
     float: left;
 }
+
 .card-text .text-reduce {
     font-size: x-small;
 }
+
 .card-title{
     background-color: #ff4422;
 }
+
 .card-text {
     background-color: rgb(250, 215, 162);
 }
+
 .card-funding ul {
     list-style: none;
 }
+
 /* Latest news  */
+
 .latest-news{
     position: relative;
     top: 50px;
@@ -247,6 +292,7 @@
     margin: auto;
     max-width: 1000px;
 }
+
 .news-warpper {
     position: relative;
     display: grid;
@@ -255,23 +301,29 @@
     width: 100%;
     grid-gap: 1em;
 }
+
 .latest-news img {
     width: 100%;
 }
+
 .latest-news h5 {
     color: grey;
     margin-top: 2px;
 }
+
 .latest-news h2 {
     margin-bottom: 5px;
     color: #ff4422;
     font-size: xx-large;
 }
+
 .latest-news h4 a {
     text-decoration: none;
     color: black;
 }
+
 /*  Feature Flex*/
+
 .features-flex {
     position: relative;
     display: block;
@@ -279,6 +331,7 @@
     margin: auto;
     max-width: 1000px;
 }
+
 .flex-anchor {
     position: relative;
     display: flex;
@@ -286,57 +339,68 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
 .card {
     flex: 1;
     margin: 20px;
 }
+
 .flex-anchor a {
     color: #ff4422;
     font-size: xx-large;
     font-weight: bolder;
     padding: 5px;
 }
+
 .flex-anchor ul {
     list-style: disc;
     
 }
+
 .flex-anchor .card li a {
     color: black;
 }
+
 .flex-anchor .card img {
     width: 100%;
 }
+
 .flex-anchor .card {
     max-width: 33.33%;
     text-align: left;
 }
+
 .flex-anchor .card-header {
     margin-bottom: 10px;
 }
+
 .card-header {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.card-content {
-    
-}
+
 .card-panel {
     flex: 1;
 }
+
 .flex-anchor .card-panel {
     background-color: rgb(245, 215, 205);
     height: auto;
 }
+
 .flex-anchor .card-panel a {
     color:#ff4422;
     font-size: medium;
 }
+
 .flex-anchor .card-panel img {
     width: 35%;
 }
+
 /* Latest deals section*/
+
 .latest-deals {
     position: relative;
     top: 220px;
@@ -344,6 +408,7 @@
     margin: auto;
     max-width: 1000px;
 }
+
 .deals-warpper {
     position: relative;
     display: grid;
@@ -352,34 +417,42 @@
     width: 100%;
     grid-gap: 1em;
 }
+
 .latest-deals img {
     width: 100%;
 }
+
 .latest-deals h2 {
     margin-bottom: 5px;
     padding-bottom: 2px;
     color: #ff4422;
     font-size: xx-large;
 }
+
 .latest-deals h4 a {
     color: black;
     font-style: bold;
     text-decoration: none;
 }
+
 .latest-deals h5 {
     color: grey;
     margin-top: 5px;
 }
+
 /* first footer */
+
 .first-footer {
     position: relative;
     top: 250px;
     background-color: #333;
 }
+
 .first-footer .first-footer-links {
     display: flex;
     justify-content: center;
 }
+
 .first-footer .first-footer-links a {
     color: white;
     padding: 1rem 1.1rem;
@@ -388,27 +461,33 @@
     background-color: rgba(153, 153, 153,0.2);
     border-radius: 50%;
 }
+
 .first-footer .first-footer-links a:hover{
     background-color: rgba(0,0,0,0.2);
 }  
+
 .first-footer .first-footer-page {
     display: flex;
     justify-content: center;
     list-style: none;
 }
+
 .first-footer .first-footer-page li {
     margin: 1rem 1rem;
     padding: 1rem 0.5rem;
     color: rgba(153, 153, 153,0.7);
 }
+
 .first-footer .first-footer-page li:hover {
     color: white;
 }
+
 .second-footer {
     position: relative;
     top: 250px;
     background-color: black;
 }
+
 .second-footer .second-footer-links {
     display: flex;
     list-style: none;
@@ -417,6 +496,7 @@
     margin: 0 1rem;
     padding: 2rem 1rem;
 }
+
 .second-footer .second-footer-links a {
     text-decoration: none;
     color: white;
