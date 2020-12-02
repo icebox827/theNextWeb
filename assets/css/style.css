@@ -229,6 +229,20 @@
     font-size: large;
 }
 
+.first-footer .first-footer-links a {
+    color: white;
+    padding: 1rem 1.1rem;
+    margin: 1rem 1rem;
+    font-size: 1rem;
+    background-color: rgba(153, 153, 153, 0.2);
+    border-radius: 50%;
+}
+
+.second-footer .second-footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
 .latest-fundings .right-header h2 a {
     color: #ff4422;
     font-size: xx-large;
@@ -453,17 +467,10 @@
     justify-content: center;
 }
 
-.first-footer .first-footer-links a {
-    color: white;
-    padding: 1rem 1.1rem;
-    margin: 1rem 1rem;
-    font-size: 1rem;
-    background-color: rgba(153, 153, 153,0.2);
-    border-radius: 50%;
-}
 
-.first-footer .first-footer-links a:hover{
-    background-color: rgba(0,0,0,0.2);
+
+.first-footer .first-footer-links a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }  
 
 .first-footer .first-footer-page {
@@ -475,7 +482,7 @@
 .first-footer .first-footer-page li {
     margin: 1rem 1rem;
     padding: 1rem 0.5rem;
-    color: rgba(153, 153, 153,0.7);
+    color: rgba(153, 153, 153, 0.7);
 }
 
 .first-footer .first-footer-page li:hover {
@@ -497,7 +504,4 @@
         padding: 2rem 1rem;
 }
 
-.second-footer .second-footer-links a {
-        text-decoration: none;
-        color: white;
-}
+
