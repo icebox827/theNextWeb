@@ -16,7 +16,8 @@
     }
     .grid-display {
         position: absolute;
-        display: block;
+        display: grid;
+        
     }
 
     .latest-news {
@@ -145,10 +146,16 @@
     height: 600px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+        "a a a a b b"
+        "a a a a b b"
+        "a a a a c c"
+        "a a a a c c";
     background-color: gray;
 }
 .grid-display section {
-    
+    position: relative;
+    display: block;
 }
 .grid-display img {
     position: absolute;
@@ -157,14 +164,16 @@
     width: 796px;
 }
 .grid-items1 {
-    grid-column: span 4;
-    grid-row: span 3;
+    background-image: url("/assets/img/IFR_screen_GlidingAphrodite_20200910_945pm_CEST-796x448.jpeg");
+    grid-area: a;  
 }
 .grid-items2 {
-    grid-area: 1 / 4 / 3 / 7; 
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Flucid-air-configurator-ray-tracing-car-future-ev-zerolight.jpg&signature=3a8658003cf3f92188923ab0528c18fb");
+    grid-area: b; 
 }
 .grid-items3 {
-    grid-area: 3 / 4 / 5 / 7;
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Fheader-image-AI-is-the-future-of-home-security-spotcam.png&signature=a404c06078f6967f593e460e65c60ac3");
+    grid-area: c;
     
 }
 /* latest-funding */
