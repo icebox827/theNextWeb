@@ -324,10 +324,41 @@
 }
 
 /* Latest deals section*/
+.latest-deals {
+    position: relative;
+    top: 90px;
+    display: block;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.deals-warpper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 1em;
+}
+
+.latest-deals img {
+    width: 100%;
+}
+
+.latest-deals h2 {
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+}
+
+.latest-deals h5 {
+    color: grey;
+}
 
 /* first footer */
 
 .first-footer {
+    position: relative;
+    top: 150px;
     background-color: #333;
 }
 
@@ -366,6 +397,8 @@
 }
 
 .second-footer {
+    position: relative;
+    top: 150px;
     background-color: black;
 }
 
