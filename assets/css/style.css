@@ -26,7 +26,6 @@
     .latest-news {
         display: block;
     }
-
 }
 
 @media all and (max-width: 992px) {
@@ -40,7 +39,6 @@
         display: inline;
         background-color: rgb(252, 250, 250);
     }
-
 
     .grid-display {
         position: absolute;
@@ -74,7 +72,7 @@
 
 .first-nav li {
     display: inline-block;
-    margin: 0.70rem;
+    margin: 0.7rem;
     padding-top: 1px;
 }
 
@@ -94,16 +92,6 @@
     display: block;
 }
 
-.first-nav ul li .dropdown-content {
-    display: none;
-    flex-direction: column;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -111,9 +99,19 @@
     top: 0;
     margin: 0;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
     padding: 12px 16px;
     z-index: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.first-nav ul li .dropdown-content {
+    display: none;
+    flex-direction: column;
 }
 
 .dropdown:hover .dropdown-content {
@@ -125,7 +123,7 @@
 .warpper1 {
     position: relative;
     top: 2rem;
-    height:  2rem;
+    height: 2rem;
     background-color: rgb(252, 250, 250);
 }
 
@@ -172,6 +170,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
+
         "a a a a b b"
         "a a a a b b"
         "a a a a c c"
@@ -204,7 +203,6 @@
 .grid-items3 {
     background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F11%2Fheader-image-AI-is-the-future-of-home-security-spotcam.png&signature=a404c06078f6967f593e460e65c60ac3");
     grid-area: c;
-    
 }
 
 /* latest-funding */
@@ -220,7 +218,7 @@
     float: left;
 }
 
-.left-header{
+.left-header {
     float: right;
 }
 
@@ -272,10 +270,6 @@
 
 .card-funding ul {
     list-style: none;
-}
-
-.flex-anchor ul {
-    list-style: disc;
 }
 
 .latest-fundings .left-header ul {
