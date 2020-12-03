@@ -496,12 +496,12 @@
 }
 
 .second-footer .second-footer-links {
-        display: flex;
-        list-style: none;
-        color: gray;
-        justify-content: center;
-        margin: 0 1rem;
-        padding: 2rem 1rem;
+    display: flex;
+    list-style: none;
+    color: gray;
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 2rem 1rem;
 }
 
 
