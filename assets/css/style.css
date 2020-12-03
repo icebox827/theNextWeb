@@ -1,27 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Media Queries */
 
 @media all and (max-width: 768px) {
-    .flex-nav ul {
-        flex-wrap: wrap;
-    }
+  .flex-nav ul {
+    flex-wrap: wrap;
+}
 
-    .first-nav {
-        display: none;
-    }
+  .first-nav {
+    display: none;
+}
 
-    .warpper {
-        display: none;
-    }
+  .warpper {
+    display: none;
+}
 
-    .grid-display {
-        position: absolute;
-        display: grid;
-    }
+  .grid-display {
+    position: absolute;
+    display: grid;
+}
 
     .latest-news {
         display: block;
