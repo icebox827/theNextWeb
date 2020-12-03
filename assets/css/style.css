@@ -223,6 +223,13 @@
     float: right;
 }
 
+.flex-anchor a {
+    color: #f42;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 5px;
+}
+
 .latest-deals h4 a {
     color: black;
     text-decoration: none;
@@ -246,6 +253,11 @@
 .second-footer .second-footer-links a {
     text-decoration: none;
     color: white;
+}
+
+.flex-anchor .card-panel a {
+    color: #f42;
+    font-size: medium;
 }
 
 .latest-fundings .right-header h2 a {
@@ -364,13 +376,6 @@
     margin: 20px;
 }
 
-.flex-anchor a {
-    color: #f42;
-    font-size: xx-large;
-    font-weight: bolder;
-    padding: 5px;
-}
-
 .flex-anchor ul {
     list-style: disc;
     
@@ -393,15 +398,15 @@
     text-align: left;
 }
 
-.flex-anchor .card-header {
-    margin-bottom: 10px;
-}
-
 .card-header {
     position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.flex-anchor .card-header {
+    margin-bottom: 10px;
 }
 
 .card-panel {
@@ -413,16 +418,11 @@
     height: auto;
 }
 
-.flex-anchor .card-panel a {
-    color:#f42;
-    font-size: medium;
-}
-
 .flex-anchor .card-panel img {
     width: 35%;
 }
 
-/* Latest deals section*/
+/* Latest deals section */
 
 .latest-deals {
     position: relative;
