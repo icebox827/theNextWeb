@@ -6,7 +6,7 @@
 /* Media Queries */
 
 @media all and (max-width: 768px) {
-  .flex-nav ul {
+  .latest-funding-content {
     flex-wrap: wrap;
   }
 
@@ -24,7 +24,9 @@
   }
 
   .latest-news {
+    position: absolute;
     display: block;
+    margin: auto;
   }
 }
     
@@ -40,7 +42,7 @@
     background-color: rgb(252, 250, 250);
   }
 
-  .grid-display {
+  .cover-display {
     position: absolute;
     display: block;
   }
@@ -198,10 +200,12 @@
 
 .latest-news img {
   width: 100%;
+  height: 75%;
 }
 
 .latest-deals img {
   width: 100%;
+  height: 75%;
 }
   
 .cover-display article img {
@@ -344,6 +348,10 @@
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   grid-gap: 1em;
+}
+
+.news-warpper a {
+    text-decoration: none;
 }
 
 .latest-news h5 {

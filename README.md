@@ -4,8 +4,8 @@
 
 > This is the project of our first week on Microverse.
 
-![screenshot](./app_screenshot.PNG)
-![screenshot](./app_screenshot1.PNG)
+![screenshot](./assets/img/app_screenshot.PNG)
+![screenshot](./assets/img/app_screenshot1.PNG)
 
 This a copy of an article from The Next web website including media queries for responsiveness.
 
@@ -42,7 +42,7 @@ Get a local copy up and running follow these simple example steps.
 
 👤 **Author2**
 
-- GitHub: [@diamond-nicholas](https://github.com/diamondnich)
+- GitHub: [@diamond-nicholas](https://github.com/diamond-nicholas)
 - Twitter: [@diamondnich](https://twitter.com/diamondnich)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/diamond-nicholas)
 
