@@ -42,8 +42,8 @@ Get a local copy up and running follow these simple example steps.
 
 👤 **Author2**
 
-- GitHub: [@diamond-nicholas]
-- Twitter: [@heracles2k5](https://twitter.com/diamondnich)
+- GitHub: [@diamond-nicholas](https://github.com/diamondnich)
+- Twitter: [@diamondnich](https://twitter.com/diamondnich)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/diamond-nicholas)
 
 ## 🤝 Contributing
