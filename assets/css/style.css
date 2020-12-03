@@ -88,6 +88,11 @@
     text-decoration: none;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .first-nav ul li .dropdown {
     display: block;
 }
@@ -102,11 +107,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
     padding: 12px 16px;
     z-index: 1;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
 }
 
 .first-nav ul li .dropdown-content {
@@ -170,7 +170,6 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-
         "a a a a b b"
         "a a a a b b"
         "a a a a c c"
