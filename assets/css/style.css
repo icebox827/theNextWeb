@@ -34,12 +34,13 @@
         flex-wrap: wrap;
     }
 
-    .warpper1 {
-        position: fixed;
-        top: 0;
-        display: inline;
-        background-color: rgb(252, 250, 250);
+        .warpper1 {
+                position: fixed;
+                top: 0;
+                display: inline;
+                background-color: rgb(252, 250, 250);
     }
+
 
     .grid-display {
         position: absolute;
@@ -235,6 +236,10 @@
     text-decoration: none;
 }
 
+.flex-anchor ul {
+    list-style: disc;
+}
+
 .latest-fundings .left-header a {
     color: #f42;
     text-decoration: none;
@@ -267,6 +272,10 @@
 
 .card-funding ul {
     list-style: none;
+}
+
+.flex-anchor ul {
+    list-style: disc;
 }
 
 .latest-fundings .left-header ul {
@@ -306,7 +315,7 @@
     font-size: x-small;
 }
 
-.card-title{
+.card-title {
     background-color: #f42;
 }
 
@@ -348,12 +357,7 @@
     font-size: xx-large;
 }
 
-.latest-news h4 a {
-    text-decoration: none;
-    color: black;
-}
-
-/*  Feature Flex*/
+/*  Feature Flex */
 
 .features-flex {
     position: relative;
@@ -374,11 +378,6 @@
 .card {
     flex: 1;
     margin: 20px;
-}
-
-.flex-anchor ul {
-    list-style: disc;
-    
 }
 
 .flex-anchor .card li a {
