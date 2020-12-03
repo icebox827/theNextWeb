@@ -18,7 +18,7 @@
     display: none;
   }
 
-  .grid-display {
+  .cover-display {
     position: absolute;
     display: grid;
   }
@@ -168,38 +168,42 @@
   margin: 0.5rem;
 }
 
-/* Grid cover articles */
+/* cover articles */
 
 .cover-display {
   position: absolute;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-    "a a b"
-    "a a c";
+  display: block;
   width: 100%;
   margin-top: 80px;
   height: 75vh;
   background-color: rgb(128, 125, 125);
 }
 
-.grid-display article img {
-    float: left;
-    margin-top: -80px;
-    margin-left: -50px;
+.cover-display article img {
+  float: left;
+  margin-top: -80px;
+  margin-left: -50px;
 } 
 
-.grid-display .grid-items-1 {
-    grid-area: a;
+.cover-display .cover-items-1 {
+  float: left;
+  width: 1000px;
+  height: 75vh;
+  margin-left: 10px;
 }
 
-.grid-display .grid-items-2 {
-    grid-area: b;
+.cover-display .cover-items-2 {
+  float: right;
+  width: 450px;
+  height: 36vh;
+  margin-right: 10px;
 }
 
-.grid-display .grid-items-3 {
-    grid-area: c;
+.cover-display .cover-items-3 {
+  float: right;
+  width: 450px;
+  height: 36vh;
+  margin-right: 10px;
 }
 
 /* latest-funding */
