@@ -34,11 +34,11 @@
         flex-wrap: wrap;
     }
 
-        .warpper1 {
-                position: fixed;
-                top: 0;
-                display: inline;
-                background-color: rgb(252, 250, 250);
+    .warpper1 {
+        position: fixed;
+        top: 0;
+        display: inline;
+        background-color: rgb(252, 250, 250);
     }
 
 
