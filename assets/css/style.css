@@ -15,7 +15,7 @@
     display: none;
   }
 }
-    
+
 @media screen and (max-width: 969px) {
   .flex-nav ul {
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
   position: absolute;
   float: left;
   display: block;
-  width: 100%; 
+  width: 100%;
   background-color: inherit;
 }
 
@@ -223,17 +223,17 @@
 }
 
 .cover-images-1 {
-  background: url('../img/cover-1.png');
+  background: url("../img/cover-1.png");
 }
 
 .cover-images-2 {
-  background: url('../img/cover-2.png');
+  background: url("../img/cover-2.png");
 }
 
 .cover-images-3 {
-  background: url('../img/cover-3.png');
+  background: url("../img/cover-3.png");
 }
-  
+
 /* latest-funding */
 
 .latest-fundings {
@@ -464,7 +464,7 @@
 .first-footer .first-footer-links a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-   
+
 .first-footer .first-footer-links li {
   text-decoration: none;
   margin: 1rem 0;
