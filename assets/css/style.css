@@ -183,13 +183,11 @@
   position: absolute;
   display: grid;
   grid-gap: 5px;
-  grid-template: 
-    "a a b"
-    "a a c";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto ;
   width: 100%;
   margin-top: 80px;
   height: 75vh;
-  background-color: rgb(128, 125, 125);
 }
 
 .card-funding img {
@@ -222,26 +220,31 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  height: 500px;
   z-index: 1;
 }
 
-.cover .cover-items-1 {
-  grid-area: a;
+.cover-image-1 {
   background-image: url(./assets/img/cover-1.png);
-  margin-left: 10px;
+}
+.cover .cover-items-1 {
+  grid-row-end: span 2;;
+  
+}
+
+.cover-image-2 {
+  background-image: url(./assets/img/cover-2.png);
 }
 
 .cover .cover-items-2 {
   grid-area: b;
-  background-image: url(./assets/img/cover-2.png);
-  margin-right: 10px;
+}
+
+.cover-image-3 {
+  background-image: url(./assets/img/cover-3.png);
 }
 
 .cover .cover-items-3 {
   grid-area: c;
-  background-image: url(./assets/img/cover-3.png);
-  margin-right: 10px;
 }
 
 /* latest-funding */
