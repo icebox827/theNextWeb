@@ -6,7 +6,7 @@
 /* Media Queries */
 
 @media all and (max-width: 768px) {
-  .flex-nav ul {
+  .latest-funding-content {
     flex-wrap: wrap;
   }
 
@@ -19,12 +19,13 @@
   }
 
   .cover-display {
-    position: absolute;
-    display: grid;
+    position: static;
   }
 
   .latest-news {
+    position: static;
     display: block;
+    margin: auto;
   }
 }
     
@@ -40,7 +41,7 @@
     background-color: rgb(252, 250, 250);
   }
 
-  .grid-display {
+  .cover-display {
     position: absolute;
     display: block;
   }
@@ -190,11 +191,13 @@
 
 .cover-display {
   position: absolute;
-  display: block;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto ;
   width: 100%;
   margin-top: 80px;
   height: 75vh;
-  background-color: rgb(128, 125, 125);
 }
 
 .card-funding img {
@@ -208,10 +211,12 @@
 
 .latest-news img {
   width: 100%;
+  height: 75%;
 }
 
 .latest-deals img {
   width: 100%;
+  height: 75%;
 }
   
 .cover-display article img {
@@ -220,25 +225,36 @@
   margin-left: -50px;
 } 
 
-.cover-display .cover-items-1 {
-  float: left;
-  width: 1000px;
-  height: 75vh;
-  margin-left: 10px;
+.cover {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  z-index: 1;
 }
 
-.cover-display .cover-items-2 {
-  float: right;
-  width: 450px;
-  height: 36vh;
-  margin-right: 10px;
+.cover-image-1 {
+  background-image: url(./assets/img/cover-1.png);
+}
+.cover .cover-items-1 {
+  grid-row-end: span 2;;
+  
 }
 
-.cover-display .cover-items-3 {
-  float: right;
-  width: 450px;
-  height: 36vh;
-  margin-right: 10px;
+.cover-image-2 {
+  background-image: url(./assets/img/cover-2.png);
+}
+
+.cover .cover-items-2 {
+  grid-area: b;
+}
+
+.cover-image-3 {
+  background-image: url(./assets/img/cover-3.png);
+}
+
+.cover .cover-items-3 {
+  grid-area: c;
 }
 
 /* latest-funding */
@@ -322,7 +338,7 @@
 .card-funding {
   flex: 1;
   margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(253, 245, 245);
 }
 
 .card-text .text-reduce {
@@ -354,6 +370,11 @@
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
   grid-gap: 1em;
+}
+
+.news-warpper a {
+    text-decoration: none;
+    color: black;
 }
 
 .latest-news h5 {
@@ -391,7 +412,8 @@
 }
 
 .flex-anchor .card li a {
-  color: black;
+  text-decoration: none;
+  color: rgb(165, 165, 165);
 }
 
 .flex-anchor .card img {
@@ -416,6 +438,7 @@
 
 .card-panel {
   flex: 1;
+  align-self: flex-start;
 }
 
 .flex-anchor .card-panel {
@@ -424,7 +447,9 @@
 }
 
 .flex-anchor .card-panel img {
-  width: 35%;
+  float: right;
+  width: 75px;
+  height: 73px;
 }
 
 /* Latest deals section */
