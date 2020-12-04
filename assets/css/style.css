@@ -19,12 +19,11 @@
   }
 
   .cover-display {
-    position: absolute;
-    display: grid;
+    position: static;
   }
 
   .latest-news {
-    position: absolute;
+    position: static;
     display: block;
     margin: auto;
   }
@@ -182,7 +181,11 @@
 
 .cover-display {
   position: absolute;
-  display: block;
+  display: grid;
+  grid-gap: 5px;
+  grid-template: 
+    "a a b"
+    "a a c";
   width: 100%;
   margin-top: 80px;
   height: 75vh;
@@ -214,24 +217,30 @@
   margin-left: -50px;
 } 
 
-.cover-display .cover-items-1 {
-  float: left;
-  width: 1000px;
-  height: 75vh;
+.cover {
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 500px;
+  z-index: 1;
+}
+
+.cover .cover-items-1 {
+  grid-area: a;
+  background-image: url(./assets/img/cover-1.png);
   margin-left: 10px;
 }
 
-.cover-display .cover-items-2 {
-  float: right;
-  width: 450px;
-  height: 36vh;
+.cover .cover-items-2 {
+  grid-area: b;
+  background-image: url(./assets/img/cover-2.png);
   margin-right: 10px;
 }
 
-.cover-display .cover-items-3 {
-  float: right;
-  width: 450px;
-  height: 36vh;
+.cover .cover-items-3 {
+  grid-area: c;
+  background-image: url(./assets/img/cover-3.png);
   margin-right: 10px;
 }
 
@@ -316,7 +325,7 @@
 .card-funding {
   flex: 1;
   margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(253, 245, 245);
 }
 
 .card-text .text-reduce {
@@ -352,6 +361,7 @@
 
 .news-warpper a {
     text-decoration: none;
+    color: black;
 }
 
 .latest-news h5 {
@@ -389,7 +399,8 @@
 }
 
 .flex-anchor .card li a {
-  color: black;
+  text-decoration: none;
+  color: rgb(165, 165, 165);
 }
 
 .flex-anchor .card img {
@@ -414,6 +425,7 @@
 
 .card-panel {
   flex: 1;
+  align-self: flex-start;
 }
 
 .flex-anchor .card-panel {
@@ -422,7 +434,9 @@
 }
 
 .flex-anchor .card-panel img {
-  width: 35%;
+  float: right;
+  width: 75px;
+  height: 73px;
 }
 
 /* Latest deals section */
