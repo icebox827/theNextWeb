@@ -5,7 +5,7 @@
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .first-nav {
     display: block;
     padding-left: 60px;
@@ -24,7 +24,13 @@
   }
 
   .cover-display {
-    position: relative;
+    position: absolute;
+    display: block;
+    width: 100%;
+  }
+
+  .cover-display img {
+    display: none;
   }
 
   .latest-news {
@@ -39,9 +45,17 @@
     width: 100%;
     padding: 8px;
   }
+
+  .latest-funding-content {
+    flex-direction: column;
+  }
+
+  .latest-funding-content .card-funding {
+    flex: 50%;
+  }
 }
     
-@media (max-width: 969px) {
+@media screen and (max-width: 969px) {
   .flex-nav ul {
     flex-wrap: wrap;
   }
@@ -54,8 +68,13 @@
   }
 
   .cover-display {
-    position: absolute;
+    position: relative;
     display: block;
+    width: 50%;
+  }
+
+  .cover-display img {
+    display: none;
   }
 
   .latest-news {
@@ -199,9 +218,6 @@
   float: right;
 }
 
-.second-nav ul {
-  list-style: none;
-}
 
 .second-nav li {
   display: inline-block;
