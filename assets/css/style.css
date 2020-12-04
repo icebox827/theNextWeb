@@ -48,6 +48,12 @@
   .latest-news {
     display: block;
   }
+   
+  .latest-deals {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: repeat();
+  }
 }
 
 /* topbar */
@@ -124,6 +130,10 @@
     font-size: xx-large;
     font-weight: bolder;
     padding: 5px;
+}
+
+.flex-anchor .card ul {
+  list-style-position: inside;
 }
 
 .dropdown-content li a {
