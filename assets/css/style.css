@@ -254,7 +254,7 @@
 }
 
 .cover-image-1 {
-  background: url('./assets/img/cover-1.png');
+  background-image: url('../assets/img/cover-1.png');
 }
 
 .cover-items-1 {
@@ -263,11 +263,11 @@
 }
 
 .cover-image-2 {
-  background-image: url('../img/cover-2.png');
+  background-image: url('..assets/img/cover-2.png');
 }
 
 .cover-image-3 {
-  background-image: url('../img/cover-3.png');
+  background-image: url('../assets/img/cover-3.png');
 }
 
 
