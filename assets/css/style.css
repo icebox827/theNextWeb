@@ -201,3 +201,81 @@
   width: 100%;
   height: 75%;
 }
+
+/* latest-funding */
+
+.latest-fundings {
+  position: relative;
+  top: 780px;
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+}
+
+.right-header {
+  float: left;
+}
+
+.left-header {
+  float: right;
+}
+
+.latest-fundings .left-header a {
+  color: #f42;
+  text-decoration: none;
+  font-size: large;
+}
+
+.latest-fundings .right-header h2 a {
+  color: #f42;
+  font-size: xx-large;
+}
+
+.latest-fundings .left-header ul {
+  display: inline-block;
+  list-style: none;
+}
+
+.latest-fundings .left-header li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.latest-funding-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.card-funding {
+  flex: 1;
+  margin: 10px;
+  background-color: rgb(253, 245, 245);
+}
+
+.card-text .text-reduce {
+  font-size: x-small;
+}
+
+.card-title {
+  background-color: #f42;
+}
+
+.card-text {
+  background-color: rgb(250, 215, 162);
+}
+
+.card-funding img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 4px;
+  float: left;
+}
+
+.card-funding ul {
+  list-style: none;
+}
