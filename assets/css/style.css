@@ -11,10 +11,27 @@
   .first-nav {
     display: none;
   }
+
+  .warper-1 {
+    position: absolute;
+    top: 0;
+    width: 33%;
+    height: 2rem;
+    background-color: rgb(252, 250, 250);
+  }
+
+  .second-nav ul li {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media screen and (max-width: 969px) {
+@media screen and (max-width: 969px and 1240px) {
   .warpper {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 }
@@ -74,7 +91,7 @@
   outline: none;
   padding: 2px 4px;
   text-decoration: none;
-  font-size: large;
+  font-size: medium;
   text-transform: uppercase;
 }
 
@@ -169,6 +186,20 @@
   height: 75vh;
 }
 
+.card-funding img {
+  width: 75px;
+  height: 75px;
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 4px;
+  float: left;
+}
+
+.latest-news img {
+  width: 100%;
+  height: 75%;
+}
+
 .latest-deals img {
   width: 100%;
   height: 75%;
@@ -190,6 +221,7 @@
 .cover-items-1 {
   grid-column: span 2;
   grid-row: 1 / 3;
+  align-self: stretch;
 }
 
 .cover-images-1 {
@@ -283,14 +315,31 @@
 .latest-fundings .right-header h2 a {
   color: #f42;
   font-size: xx-large;
+  text-decoration: none;
 }
 
-.card-funding ul {
+.card-funding ul li {
   list-style: none;
+  list-style-position: inside;
+  margin: 3px;
+  padding: 5px;
+}
+
+.card-funding ul :nth-child(2) {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgb(247, 194, 194);
 }
 
 .flex-anchor ul {
   list-style: disc;
+}
+
+.flex-anchor li {
+  border-bottom: 1px solid rgb(247, 194, 194);
+  text-align: start;
+  width: 100%;
+  left: -5px;
 }
 
 .latest-fundings .left-header ul {
@@ -330,19 +379,19 @@
 .card-funding {
   flex: 1;
   margin: 10px;
-  background-color: rgb(253, 245, 245);
+  background-color: rgb(252, 248, 249);
 }
 
-.card-text .text-reduce {
-  font-size: x-small;
-}
+
 
 .card-title {
   background-color: #f42;
+  padding: 10px;
 }
 
 .card-text {
-  background-color: rgb(250, 215, 162);
+  background-color: rgb(255, 237, 233);
+  padding: 13px;
 }
 
 /*  Feature Flex */
@@ -395,6 +444,7 @@
 
 .card-panel {
   flex: 1;
+  padding: 5px;
   align-self: flex-start;
 }
 
@@ -405,12 +455,15 @@
 
 .flex-anchor .card-panel img {
   float: right;
-  width: 75px;
-  height: 73px;
+  margin-top: -15px;
+  padding: 3px;
+  width: 85px;
+  height: 83px;
 }
 
 .flex-anchor .card ul {
   list-style-position: inside;
+  padding: 5px;
 }
 
 /* Latest deals section */
