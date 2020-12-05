@@ -271,6 +271,15 @@
   text-align: center;
 }
 
+.first-footer .footer-button a {
+  color: white;
+  padding: 1rem 1.1rem;
+  margin: 1rem 1rem;
+  font-size: 1rem;
+  background-color: rgba(153, 153, 153, 0.2);
+  border-radius: 50%;
+}
+
 .latest-fundings .right-header h2 a {
   color: #f42;
   font-size: xx-large;
@@ -293,6 +302,16 @@
   margin: 1rem 1rem;
   padding: 1rem 0.5rem;
   color: rgba(153, 153, 153, 0.7);
+}
+
+.footer-button li {
+  text-decoration: none;
+  margin: -10px;
+  padding: 1rem 0;
+  top: 2rem;
+  list-style: none;
+  border-radius: 50%;
+  align-self: center;
 }
 
 .latest-fundings .left-header li {
@@ -437,25 +456,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-button li {
-  text-decoration: none;
-  margin: -10px;
-  padding: 1rem 0;
-  top: 2rem;
-  list-style: none;
-  border-radius: 50%;
-  align-self: center;
-}
-
-.first-footer .footer-button a {
-  color: white;
-  padding: 1rem 1.1rem;
-  margin: 1rem 1rem;
-  font-size: 1rem;
-  background-color: rgba(153, 153, 153, 0.2);
-  border-radius: 50%;
 }
 
 .footer-link {
