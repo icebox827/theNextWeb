@@ -279,3 +279,91 @@
 .card-funding ul {
   list-style: none;
 }
+
+/*  Feature Flex */
+
+.features-flex {
+  position: relative;
+  display: block;
+  top: 770px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.flex-anchor {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  flex: 1;
+  margin: 20px;
+}
+
+.flex-anchor .card li a {
+  text-decoration: none;
+  color: rgb(165, 165, 165);
+}
+
+.flex-anchor .card img {
+  width: 100%;
+}
+
+.flex-anchor .card {
+  max-width: 33.33%;
+  text-align: left;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex-anchor .card-header {
+  margin-bottom: 10px;
+}
+
+.card-panel {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.flex-anchor .card-panel {
+  background-color: rgb(245, 215, 205);
+  height: auto;
+}
+
+.flex-anchor .card-panel img {
+  float: right;
+  width: 75px;
+  height: 73px;
+}
+
+.flex-anchor .card-panel a {
+  color: #f42;
+  font-size: medium;
+}
+
+.flex-anchor a {
+  color: #f42;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.flex-anchor ul {
+  list-style: disc;
+}
+
+.card-funding ul {
+  list-style: none;
+}
+
+.flex-anchor .card ul {
+  list-style-position: inside;
+}
