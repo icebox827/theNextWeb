@@ -141,7 +141,7 @@
 }
 
 .cover-display article img {
-  margin-top: -80px;
+  margin-top: -50px;
   margin-left: -50px;
 } 
 
@@ -160,4 +160,44 @@
 
 .cover-images-1 {
 	background: url('cover-1.png');
+}
+
+/* Latest news  */
+
+.latest-news {
+  position: relative;
+  top: 700px;
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.news-warpper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  grid-gap: 1em;
+}
+
+.latest-news h5 {
+  color: grey;
+  margin-top: 2px;
+}
+
+.latest-news h2 {
+  margin-bottom: 5px;
+  color: #f42;
+  font-size: xx-large;
+}
+
+.news-warpper a {
+  text-decoration: none;
+  color: black;
+}
+
+.latest-news img {
+  width: 100%;
+  height: 75%;
 }
