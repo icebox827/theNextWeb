@@ -4,7 +4,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .warpper {
     display: none;
   }
@@ -84,6 +83,13 @@
   color: black;
 }
 
+.flex-anchor a {
+  color: #f42;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 5px;
+}
+
 .dropdown-content li a {
   border-bottom: 1px solid #fff;
 }
@@ -154,9 +160,9 @@
   height: 75vh;
 }
 
-.news-warpper a {
-  text-decoration: none;
-  color: black;
+.latest-deals img {
+  width: 100%;
+  height: 75%;
 }
 
 .cover-display article img {
@@ -229,15 +235,29 @@
   float: right;
 }
 
+.latest-deals h4 a {
+  color: black;
+  text-decoration: none;
+}
+
 .latest-fundings .left-header a {
   color: #f42;
   text-decoration: none;
   font-size: large;
 }
 
+.flex-anchor .card-panel a {
+  color: #f42;
+  font-size: medium;
+}
+
 .latest-fundings .right-header h2 a {
   color: #f42;
   font-size: xx-large;
+}
+
+.card-funding ul {
+  list-style: none;
 }
 
 .latest-fundings .left-header ul {
@@ -274,10 +294,6 @@
 
 .card-text {
   background-color: rgb(250, 215, 162);
-}
-
-.card-funding ul {
-  list-style: none;
 }
 
 /*  Feature Flex */
@@ -344,24 +360,8 @@
   height: 73px;
 }
 
-.flex-anchor .card-panel a {
-  color: #f42;
-  font-size: medium;
-}
-
-.flex-anchor a {
-  color: #f42;
-  font-size: xx-large;
-  font-weight: bolder;
-  padding: 5px;
-}
-
 .flex-anchor ul {
   list-style: disc;
-}
-
-.card-funding ul {
-  list-style: none;
 }
 
 .flex-anchor .card ul {
@@ -397,16 +397,6 @@
 .latest-deals h5 {
   color: grey;
   margin-top: 5px;
-}
-
-.latest-deals h4 a {
-  color: black;
-  text-decoration: none;
-}
-
-.latest-deals img {
-  width: 100%;
-  height: 75%;
 }
 
 /* first footer */
