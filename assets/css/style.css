@@ -13,14 +13,27 @@
   }
 
   .warper-1 {
+    display: none;
+  }
+  .second-nav {
+    display: none ;
+  }
+  
+  .mobile-nav {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
     top: 0;
-    width: 33%;
+    width: 100%;
     height: 2rem;
     background-color: rgb(252, 250, 250);
   }
 
-  .second-nav ul li {
+  .mobile ul .mobile-items {
+    display: none;
+  }
+
+  .mobile ul li {
     display: flex;
     flex-direction: column;
   }
@@ -36,6 +49,10 @@
   }
 }
 
+/* mobile nav */
+.mobile-nav {
+  display: none;
+}
 /* first nav */
 
 .warpper {
