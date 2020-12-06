@@ -3,58 +3,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
-  .warpper {
-    display: none;
-  }
-
-  .first-nav {
-    display: none;
-  }
-
-  .warper-1 {
-    display: none;
-  }
-  .second-nav {
-    display: none ;
-  }
-  
-  .mobile-nav {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    top: 0;
-    width: 100%;
-    height: 2rem;
-    background-color: rgb(252, 250, 250);
-  }
-
-  .mobile ul .mobile-items {
-    display: none;
-  }
-
-  .mobile ul li {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 969px and 1240px) {
-  .warpper {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: none;
-  }
-}
-
-/* mobile nav */
-.mobile-nav {
-  display: none;
-}
 /* first nav */
-
 .warpper {
   position: absolute;
   width: 100%;
@@ -174,6 +123,10 @@
   background-color: inherit;
 }
 
+.toggle {
+  display: none;
+}
+
 .second-nav img {
   position: relative;
   float: left;
@@ -242,7 +195,15 @@
 }
 
 .cover-images-1 {
-  background: url("cover-1.png");
+  background: url("../img/cover-1.png");
+}
+
+.cover-images-2 {
+  background: url("../img/cover-2.png");
+}
+
+.cover-images-3 {
+  background: url("../img/cover-3.png");
 }
 
 /* Latest news  */
@@ -519,6 +480,7 @@
 .first-footer {
   position: relative;
   top: 980px;
+  padding: 25px;
   background-color: #333;
 }
 
@@ -561,4 +523,197 @@
 
 .second-footer .footer-text img {
   width: 55px;
+}
+
+@media (max-width: 768px) {
+  .warpper {
+    display: none;
+  }
+
+  .first-nav {
+    display: none;
+  }
+
+  .warpper1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    background-color: rgb(252, 250, 250);
+  }
+
+  .toggle a {
+    display: block;
+    width: 100%;
+    float: right;
+  }
+
+  .second-nav {
+    display: block;
+    width: 100%;
+    background-color: inherit;
+  }
+
+  .second-nav ul li {
+    display: none;
+  }
+
+  .second-nav img {
+    float: left;
+    padding: 25px;
+  }
+
+  .cover-display {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .cover {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .latest-news {
+    position: relative;
+    top: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .news-warpper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .news-warpper img {
+    width: 39%;
+    float: left;
+    padding: 2px;
+    margin: 3px;
+  }
+
+  .news-warpper h4 {
+    float: right;
+    width: 60%;
+    margin-top: -80px;
+  }
+
+  .news-warpper h5 {
+    float: right;
+    margin-top: -20px;
+    text-align: left;
+  }
+
+  .latest-fundings {
+    position: relative;
+    display: block;
+    top: 200px;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .latest-fundings .right-header h2 {
+    padding: 7px;
+  }
+
+  .latest-fundings .left-header {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .latest-fundings .left-header li {
+    display: block;
+  }
+  
+  .latest-funding-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .features-flex {
+    position: relative;
+    width: 100%;
+    top: 270px;
+    margin: auto;
+  }
+
+  .flex-anchor {
+    position: relative;
+    display: flex;
+    width: 85rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+  }
+
+  .latest-deals {
+    position: relative;
+    top: 330px;
+    display: block;
+    margin: auto;
+  }
+
+  .deals-warpper {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .deals-warpper img {
+    width: 39%;
+    float: left;
+    padding: 2px;
+    margin: 3px;
+  }
+
+  .deals-warpper h4 {
+    float: right;
+    width: 60%;
+    margin-top: -80px;
+  }
+
+  .deals-warpper h5 {
+    float: right;
+    margin-top: -20px;
+    text-align: left;
+  }
+
+  .first-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+    top: 85rem;
+  }
+
+ .footer-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+  .second-footer {
+    display: inline;
+    position: relative;
+    width: 100%;
+    top: 86rem;
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 969px and 1240px) {
+  
 }
