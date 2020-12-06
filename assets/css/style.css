@@ -691,26 +691,40 @@
   }
 
   .first-footer {
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: auto;
-    top: 85rem;
-  }
-
- .footer-button {
     display: flex;
-    justify-content: flex-end;
+    position: relative;
+    flex-direction: column;
     align-items: center;
+    top: 25rem;
+    width: 100%;
+    height: 25vh;
+    margin: 0 auto;
+    background-color: #333;
   }
 
+  .footer-button  ul {
+    width: 100%;
+  }
+
+  .footer-button li a {
+    list-style-position: inside;
+    text-align: center;
+    margin: 15px;
+  }
 
   .second-footer {
-    display: inline;
+    display: flex;
     position: relative;
+    justify-content: center;
+    top: 25rem;
     width: 100%;
-    top: 86rem;
-    background-color: black;
+    height: 20vh;
+    background-color: rgb(8, 8, 8);
+  }
+
+  .second-footer .footer-text{
+    width: 100%;
+    align-self: center;
   }
 }
 
