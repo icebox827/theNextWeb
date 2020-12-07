@@ -672,7 +672,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
     width: 100%;
-    margin-left: 1.5rem
+    margin-left: 1.5rem;
   }
 
   .card {
