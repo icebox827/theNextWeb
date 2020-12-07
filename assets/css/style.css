@@ -195,7 +195,7 @@
 }
 
 .cover-images-1 {
-  background: url("../img/cover-1.png");
+  background-image: url("assets/img/cover-1.png");
 }
 
 .cover-images-2 {
@@ -565,6 +565,7 @@
     position: relative;
     display: block;
     width: 100%;
+    padding-left: 2rem;
     z-index: 1;
   }
 
@@ -576,36 +577,29 @@
     z-index: -1;
   }
 
+  .cover .cover-items-1 img {
+    display: none;
+  }
+
   .latest-news {
     position: relative;
     top: 100px;
     display: block;
-    margin: auto;
+    margin-left: 1.5rem;
   }
 
   .news-warpper {
-    display: block;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     width: 100%;
-  }
-
-  .news-warpper img {
-    width: 39%;
-    float: left;
-    padding: 2px;
-    margin: 3px;
-  }
-
-  .news-warpper h4 {
-    float: right;
-    width: 60%;
-    margin-top: -80px;
+    grid-gap: 1em;
+    padding: 10px;
   }
 
   .news-warpper h5 {
-    float: right;
-    margin-top: -20px;
-    text-align: left;
+    margin-bottom: 2rem;
   }
 
   .latest-fundings {
@@ -658,34 +652,23 @@
 
   .latest-deals {
     position: relative;
-    top: 330px;
+    top: 350px;
     display: block;
-    margin: auto;
+    margin-left: 1.5rem;
   }
 
   .deals-warpper {
-    display: block;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     width: 100%;
-  }
-
-  .deals-warpper img {
-    width: 39%;
-    float: left;
-    padding: 2px;
-    margin: 3px;
-  }
-
-  .deals-warpper h4 {
-    float: right;
-    width: 60%;
-    margin-top: -80px;
+    grid-gap: 1em;
+    padding-left: 10px;
   }
 
   .deals-warpper h5 {
-    float: right;
-    margin-top: -20px;
-    text-align: left;
+    margin-bottom: 2rem;
   }
 
   .first-footer {
