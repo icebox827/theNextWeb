@@ -176,8 +176,9 @@
 }
 
 .cover-display article img {
-  margin-top: -50px;
-  margin-left: -50px;
+  position: relative;
+  top: -37rem;
+  left: -50px;
 }
 
 .cover {
@@ -578,30 +579,40 @@
   }
 
   .cover-display {
-    position: relative;
-    display: block;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
     width: 100%;
-    padding-left: 2rem;
-    z-index: 1;
+    margin-top: 80px;
+    height: 75vh;
   }
 
   .cover {
     position: relative;
     width: 100%;
+    margin-left: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
   }
 
-  .cover .cover-items-1 img {
+  .cover-items-1 {
+    grid-column: span 2;
+    grid-row: 1 / 3;
+    align-self: stretch;
+  }
+
+  .cover img {
     display: none;
   }
 
   .latest-news {
     position: relative;
-    top: 100px;
+    top: 55rem;
     display: block;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
 
   .news-warpper {
@@ -621,8 +632,9 @@
   .latest-fundings {
     position: relative;
     display: block;
-    top: 200px;
+    top: 70rem;
     width: 100%;
+    margin-top: 10rem;
     margin-left: 1.5rem;
     padding: 5px;
   }
@@ -656,11 +668,11 @@
   }
 
   .flex-anchor {
-    position: relative;
-    display: flex;
-    width: 85rem;
-    justify-content: space-between;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    width: 100%;
+    margin-left: 1.5rem
   }
 
   .card {
@@ -671,6 +683,7 @@
     position: relative;
     top: 350px;
     display: block;
+    margin-top: 13rem;
     margin-left: 1.5rem;
   }
 
