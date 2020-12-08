@@ -628,7 +628,7 @@ footer {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    page-break-after: 5px;
+    padding: 5px;
     font-size: 13px;
   }
 
@@ -692,6 +692,94 @@ footer {
     margin: 0 auto;
   }
 
+  .latest-deals {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 4rem;
+  }
+
+  .deals-warpper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .deals-warpper img {
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 7px;
+  }
+
+  .deals-warpper h4 {
+    padding-top: 9px;
+  }
+
+  .first-footer {
+    position: relative;
+    display: block;
+    width: 19.4rem;
+    top: 5rem;
+  }
+
+  .footer-button {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-button ul {
+    list-style-position: inside;
+  }
+
+  .footer-button li {
+    margin: -15px;
+    text-align: center;
+  }
+
+  .footer-button li a i {
+    font-size: x-small;
+  }
+
+  .footer-link {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-link ul li {
+    list-style-position: inside;
+    align-self: center;
+    margin: -10px;
+  }
+
+  .footer-link li a {
+    font-size: small;
+  }
+
+  .second-footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 5rem;
+  }
+
+  .footer-text {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {  
