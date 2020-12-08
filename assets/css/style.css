@@ -561,12 +561,27 @@ footer {
     top: 0;
     width: 100%;
     height: 10vh;
+    z-index: -1;
   }
 
-  .second-nav img {
-    position: relative;
+  .logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .logo img {
     width: 100%;
-    float: left;
+  } 
+
+  .toggle {
+    position: absolute;
+    display: inline;
+    top: 25px;
+    right: 10px;
+    z-index: 1;
   }
 
   .second-nav .toggle {
@@ -580,12 +595,103 @@ footer {
   }
 
   .cover-display {
-    position: absolute;
-    display:  flex;
+    position: relative;
+    display:  grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    width: 100%;
+    height: 100%;
+    top: 4rem;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .cover-items-1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .cover {
+    width: 22rem;
+  }
+
+  .latest-news {
+    display: block;
+    position: relative;
+    top: 5rem;
+  }
+
+  .news-warpper {
+    display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+    page-break-after: 5px;
+    font-size: 13px;
   }
+
+  .news-warpper img {
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 7px;
+  }
+
+  .news-warpper h4 {
+    padding-top: 9px;
+  }
+
+  .latest-fundings {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 5.5rem;
+  }
+
+  .latest-fundings .right-header h2 {
+    padding: 7px;
+  }
+
+  .latest-fundings .left-header {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .latest-fundings .left-header li {
+    display: block;
+  }
+
+  .latest-funding-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  .latest-funding-content > div:nth-child(4) {
+    visibility: hidden;
+  }
+
+  .features-flex {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0.1rem;
+  }
+
+  .flex-anchor {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 310px;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {  
@@ -689,7 +795,7 @@ footer {
   }
   
   .second-nav {
-    display: flex;
+    display: inline;
     align-items: center;
     align-content: center;
     width: 100%;
@@ -699,7 +805,7 @@ footer {
   
   .second-nav .search {
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
   }
 
@@ -715,10 +821,6 @@ footer {
     display: none;
   }
   
-  .second-nav .search {
-    float: right;
-  }
-  
   .second-nav li {
     display: inline-block;
     margin: 0.5rem;
@@ -732,6 +834,9 @@ footer {
     gap: 0.5em;
     width: 100%;
     height: 50vh;
+  }
+  .cover .cover-images-1 img {
+    display: none;
   }
 
   .latest-news {
