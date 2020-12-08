@@ -123,15 +123,16 @@
   background-color: inherit;
 }
 
-.toggle {
-  display: none;
-}
-
 .second-nav img {
   position: relative;
   float: left;
   width: 110px;
   height: 50px;
+  display: none;
+}
+
+.toggle {
+  display: none;
 }
 
 .second-nav .search {
@@ -301,7 +302,6 @@
 .second-footer .footer-text a {
   text-decoration: none;
   color: white;
-  align-self: center;
   text-align: center;
 }
 
@@ -446,6 +446,10 @@
   height: auto;
 }
 
+.flex-anchor .card-content img {
+  width: 100%;
+}
+
 .flex-anchor .card-panel img {
   float: right;
   margin-top: -15px;
@@ -519,9 +523,14 @@
 
 /* second footer */
 
+footer {
+  width: 100%;
+}
+
 .second-footer {
   position: relative;
-  top: 950px;
+  top: 60rem;
+  width: 100%; 
   background-color: black;
 }
 
@@ -540,7 +549,7 @@
   width: 55px;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .warpper {
     display: none;
   }
@@ -551,200 +560,129 @@
 
   .warpper1 {
     position: absolute;
-    display: block;
-    width: 100%;
     top: 0;
-    background-color: rgb(252, 250, 250);
+    width: 100%;
+    height: 10vh;
   }
 
-  .toggle a {
-    display: block;
+  .second-nav img {
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+
+  .second-nav .toggle {
+    position: relative;
     width: 100%;
     float: right;
   }
 
-  .second-nav {
-    display: block;
-    width: 100%;
-    background-color: inherit;
-  }
-
-  .second-nav ul li {
+  .second-nav li {
     display: none;
-  }
-
-  .second-nav img {
-    float: left;
-    padding: 25px;
   }
 
   .cover-display {
     position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    width: 100%;
-    margin-top: 80px;
-    height: 75vh;
-  }
-
-  .cover {
-    position: relative;
-    width: 100%;
-    margin-left: 2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
-
-  .cover-items-1 {
-    grid-column: span 2;
-    grid-row: 1 / 3;
-    align-self: stretch;
-  }
-
-  .cover img {
-    display: none;
-  }
-
-  .latest-news {
-    position: relative;
-    top: 55rem;
-    display: block;
-    margin-left: 2rem;
-  }
-
-  .news-warpper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    grid-gap: 1em;
-    padding: 10px;
-  }
-
-  .news-warpper h5 {
-    margin-bottom: 2rem;
-  }
-
-  .latest-fundings {
-    position: relative;
-    display: block;
-    top: 70rem;
-    width: 100%;
-    margin-top: 10rem;
-    margin-left: 1.5rem;
-    padding: 5px;
-  }
-
-  .latest-fundings .right-header h2 {
-    padding: 7px;
-  }
-
-  .latest-fundings .left-header {
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-
-  .latest-fundings .left-header li {
-    display: block;
-  }
-
-  .latest-funding-content {
-    position: relative;
-    display: flex;
+    display:  flex;
     justify-content: space-between;
     flex-direction: column;
-  }
-
-  .features-flex {
-    position: relative;
     width: 100%;
-    top: 270px;
-    margin: auto;
-  }
-
-  .flex-anchor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: none;
-    width: 100%;
-    margin-left: 1.5rem;
-  }
-
-  .card {
-    width: 100%;
-  }
-
-  .latest-deals {
-    position: relative;
-    top: 350px;
-    display: block;
-    margin-top: 13rem;
-    margin-left: 1.5rem;
-  }
-
-  .deals-warpper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    grid-gap: 1em;
-    padding-left: 10px;
-  }
-
-  .deals-warpper h5 {
-    margin-bottom: 2rem;
-  }
-
-  .first-footer {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    top: 25rem;
-    width: 100%;
-    height: 25vh;
-    margin: 0 auto;
-    background-color: #333;
-  }
-
-  .footer-button ul {
-    width: 100%;
-  }
-
-  .footer-button li a {
-    list-style-position: inside;
-    text-align: center;
-    margin: 15px;
-  }
-
-  .second-footer {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    top: 25rem;
-    width: 100%;
-    height: 20vh;
-    background-color: rgb(8, 8, 8);
-  }
-
-  .second-footer .footer-text {
-    width: 100%;
-    align-self: center;
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {  
+  .warpper {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    width: 51rem;
+    top: 0%;
+    background-color: black;
+    z-index: 1;
+  }
+  
+  .toggle {
+    display: none;
+  }
+
+  .first-nav {
+    float: left;
+    width: 100%;
+    background-color: inherit;
+  }
+  
+  .first-nav .nav-right {
+    float: right;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .first-nav ul li .dropdown {
+    display: block;
+  }
+
+  .dropdown-content li a {
+    border-bottom: 1px solid #fff;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    margin: 0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .warpper1 {
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    width: 51rem;
+    height: 2rem;
+    background-color: rgb(252, 250, 250);
+  }
+  
+  .second-nav {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: inherit;
+  }
+  
+  .second-nav img {
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 15%;
+  }
+  
+  .toggle {
+    display: none;
+  }
+  
+  .second-nav .search {
+    float: right;
+  }
+  
+  .second-nav li {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+
   .latest-news {
     display: block;
     position: relative;
     width: 100%;
+    top: 880px;
     padding: 5px;
+    margin: 20px 10px 0 10px;
   }
 
   .news-warpper {
@@ -753,14 +691,14 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     width: 100%;
-    grid-gap: 1em;
+    grid-gap: 2em;
     padding: 10px;
   }
 
   .latest-fundings {
     position: relative;
     display: block;
-    top: 47rem;
+    top: 57rem;
     width: 100%;
     padding: 5px;
   }
@@ -794,14 +732,23 @@
   .features-flex {
     position: relative;
     width: 100%;
-    top: 520px;
+    top: 40rem;
     margin: auto;
   }
 
   .flex-anchor {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
+    width: 100%;
+    margin-left: 1rem;
+  }
+
+  .flex-anchor .card-content{
+    width: 100%;
+  }
+  .flex-anchor .card-panel {
     width: 100%;
   }
 
@@ -809,7 +756,9 @@
     display: block;
     position: relative;
     width: 100%;
+    top: 33rem;
     padding: 5px;
+    margin: 180px 10px 0 10px;
   }
 
   .deals-warpper {
@@ -818,7 +767,22 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     width: 100%;
-    grid-gap: 1em;
+    grid-gap: 2em;
     padding: 10px;
+  }
+
+  .first-footer {
+    width: 100%;
+    top: 34rem;
+  }
+
+  .first-footer .footer-button li {
+    text-align: center;
+  }
+
+  .second-footer {
+    position: relative;
+    width: 51rem;
+    top: 34rem;
   }
 }
