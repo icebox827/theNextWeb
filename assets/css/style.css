@@ -666,6 +666,17 @@ footer {
     width: 100%;
   }
 
+  .footer-button li {
+    margin: -15px;
+    text-align: center;
+  }
+
+  .footer-link ul li {
+    list-style-position: inside;
+    align-self: center;
+    margin: -20px;
+  }
+
   .latest-fundings .left-header li {
     display: block;
   }
@@ -746,11 +757,6 @@ footer {
     list-style-position: inside;
   }
 
-  .footer-button li {
-    margin: -15px;
-    text-align: center;
-  }
-
   .footer-button li a i {
     font-size: x-small;
   }
@@ -761,12 +767,6 @@ footer {
     align-content: center;
     width: 80%;
     margin: 0 auto;
-  }
-
-  .footer-link ul li {
-    list-style-position: inside;
-    align-self: center;
-    margin: -20px;
   }
 
   .footer-link li a {
@@ -819,7 +819,7 @@ footer {
 
   .logo img {
     position: relative;
-    left: 0px;
+    left: 0;
     width: 100px;
     height: 75px;
     z-index: inherit;
@@ -889,7 +889,6 @@ footer {
 
   .warpper1 {
     position: relative;
-    width: 100%;
     top: 2.5rem;
     width: 42rem;
     background-color: rgb(252, 250, 250);
@@ -918,10 +917,6 @@ footer {
     visibility: hidden;
   }
 
-  .toggle {
-    display: none;
-  }
-
   .second-nav li {
     display: inline-block;
     margin: 0.5rem;
@@ -936,6 +931,7 @@ footer {
     width: 100%;
     height: 50vh;
   }
+
   .cover .cover-images-1 img {
     display: none;
   }
@@ -1012,6 +1008,7 @@ footer {
   .flex-anchor .card-content {
     width: 100%;
   }
+
   .flex-anchor .card-panel {
     width: 100%;
   }
