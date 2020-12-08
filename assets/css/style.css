@@ -593,10 +593,7 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1024px) {  
   .warpper {
     position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: flex-start;
+    display: inline-block;
     width: 51rem;
     top: 0%;
     background-color: black;
@@ -608,11 +605,22 @@ footer {
   }
 
   .first-nav {
-    float: left;
+    display: flex;
+    justify-content: flex-start;
     width: 100%;
     background-color: inherit;
   }
   
+  .first-nav li {
+    display: inline-block;
+  }
+
+  .first-nav a {
+    color: beige;
+    text-decoration: none;
+    margin-left: 60px;
+  }
+
   .first-nav .nav-right {
     float: right;
   }
