@@ -558,8 +558,9 @@ footer {
 
   .warpper1 {
     position: absolute;
+    display: block;
     top: 0;
-    width: 100%;
+    max-width: 700px;
     height: 10vh;
     z-index: -1;
   }
@@ -582,6 +583,11 @@ footer {
     top: 25px;
     right: 10px;
     z-index: 1;
+  }
+
+  .second-nav {
+    position: relative;
+    width: 100%;
   }
 
   .second-nav .toggle {
@@ -613,7 +619,7 @@ footer {
   }
 
   .cover {
-    width: 22rem;
+    width: 19rem;
   }
 
   .latest-news {
@@ -723,7 +729,7 @@ footer {
   .first-footer {
     position: relative;
     display: block;
-    width: 19.4rem;
+    width: 18rem;
     top: 5rem;
   }
 
@@ -750,20 +756,22 @@ footer {
   }
 
   .footer-link {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .footer-link ul li {
     list-style-position: inside;
     align-self: center;
-    margin: -10px;
+    margin: -20px;
   }
 
   .footer-link li a {
-    font-size: small;
+    font-size: x-small;
+    margin: -20px;
   }
 
   .second-footer {
@@ -779,6 +787,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+  }
+
+  .footer-text li h4 {
+    font-size: small;
+    text-align: center;
   }
 }
 
