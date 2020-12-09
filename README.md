@@ -40,11 +40,6 @@ Get a local copy up and running follow these simple example steps.
 - Twitter: [@heracles2k5](https://twitter.com/@heracles2k5)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/denis-lafontant-37031439/)
 
-👤 **Author2**
-
-- GitHub: [@diamond-nicholas](https://github.com/diamond-nicholas)
-- Twitter: [@diamondnich](https://twitter.com/diamondnich)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/diamond-nicholas)
 
 ## 🤝 Contributing
 

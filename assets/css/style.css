@@ -626,6 +626,7 @@ footer {
   .latest-news {
     display: block;
     position: relative;
+    max-width: 765px;
     top: 5rem;
   }
 
@@ -655,6 +656,10 @@ footer {
     display: block;
     width: 100%;
     top: 5.5rem;
+  }
+
+  .latest-funding-content {
+    width: 100%;
   }
 
   .latest-fundings .right-header h2 {
@@ -741,7 +746,7 @@ footer {
   .first-footer {
     position: relative;
     display: block;
-    width: 100%;
+    width: 28rem;
     top: 5rem;
   }
 
@@ -778,7 +783,7 @@ footer {
   .second-footer {
     position: relative;
     display: block;
-    width: 100%;
+    width: 31.1rem;
     top: 5rem;
   }
 
@@ -941,7 +946,7 @@ footer {
     display: block;
     position: relative;
     max-width: 700px;
-    top: 37rem;
+    top: 28rem;
     padding: 5px;
     margin: 0 auto;
   }
@@ -959,8 +964,8 @@ footer {
   .latest-fundings {
     position: relative;
     display: block;
-    top: 40rem;
-    max-width: 700px;
+    top: 33rem;
+    width: 100%;
     padding: 5px;
   }
 
@@ -993,7 +998,7 @@ footer {
   .features-flex {
     position: relative;
     width: 100%;
-    top: 25rem;
+    top: 20rem;
     margin: auto;
   }
 
@@ -1018,7 +1023,7 @@ footer {
     display: block;
     position: relative;
     width: 100%;
-    top: 28rem;
+    top: 25rem;
     padding: 5px;
     margin: 0 80px 0 10px;
   }
@@ -1043,7 +1048,7 @@ footer {
   }
 
   .second-footer {
-    width: 100%;
+    width: 51.1rem;
     top: 34rem;
   }
 
