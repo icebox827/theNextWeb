@@ -560,7 +560,7 @@ footer {
     position: absolute;
     display: block;
     top: 0;
-    max-width: 700px;
+    max-width: 100%;
     height: 10vh;
     z-index: -1;
   }
@@ -619,7 +619,7 @@ footer {
   }
 
   .cover {
-    width: 22rem;
+    width: 100%;
   }
 
   .latest-news {
@@ -799,7 +799,7 @@ footer {
   .warpper {
     position: absolute;
     display: inline-block;
-    width: 41rem;
+    width: 100%;
     top: 0%;
     background-color: black;
     z-index: -1;
@@ -890,7 +890,7 @@ footer {
   .warpper1 {
     position: relative;
     top: 2.5rem;
-    width: 42rem;
+    width: 100%;
     background-color: rgb(252, 250, 250);
   }
 
@@ -1042,8 +1042,11 @@ footer {
   }
 
   .second-footer {
-    position: relative;
-    width: 51.2rem;
+    width: 100%;
     top: 34rem;
+  }
+
+  .footer-text {
+    width: 100%;
   }
 }
