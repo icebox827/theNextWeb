@@ -740,7 +740,7 @@ footer {
   .first-footer {
     position: relative;
     display: block;
-    width: 19rem;
+    width: 100%;
     top: 5rem;
   }
 
@@ -777,7 +777,7 @@ footer {
   .second-footer {
     position: relative;
     display: block;
-    width: 22rem;
+    width: 100%;
     top: 5rem;
   }
 
