@@ -176,8 +176,9 @@
 
 .cover-display article img {
   position: relative;
-  top: -37rem;
+  top: -35rem;
   left: -50px;
+  margin-top: 10px;
 }
 
 .cover {
@@ -940,7 +941,7 @@ footer {
     display: block;
     position: relative;
     max-width: 700px;
-    top: 38rem;
+    top: 37rem;
     padding: 5px;
     margin: 0 auto;
   }
